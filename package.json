@@ -5,8 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build bp-mat-tristate-checkbox",
     "test": "ng test",
+    "test:lib": "ng test bp-mat-tristate-checkbox",
     "lint": "ng lint",
+    "lint:lib": "ng lint bp-mat-tristate-checkbox",
     "e2e": "ng e2e"
   },
   "private": true,

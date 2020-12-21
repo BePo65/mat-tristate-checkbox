@@ -37,11 +37,17 @@ export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
 
   /**
    * Set value of this checkbox to given value.
+   * (Only) on first run with FormControl value is null.
    * @param value - new value for this checkbox
    */
   writeValue(value: boolean | undefined): void {
-    if (!this.chkStates.includes(value)) {
-      throw new Error(`Value '${value}' in  BpMatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+    if (value === null) {
+      value = this.chkStates[0];
+      console.log('writeValue mit null');
+    } else {
+      if (!this.chkStates.includes(value)) {
+        throw new Error(`Value '${value}' in  BpMatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+      }
     }
     this.value = value;
   }

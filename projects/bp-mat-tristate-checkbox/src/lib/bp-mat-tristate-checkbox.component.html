@@ -1,0 +1,7 @@
+<mat-checkbox #chkbox
+  [(ngModel)]="value"
+  [disabled]="disabled"
+  [indeterminate]="value === undefined"
+  [color]="color"
+  [labelPosition]="labelPosition"
+  (click)="next()"><ng-content></ng-content></mat-checkbox>

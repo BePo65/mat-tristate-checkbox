@@ -1,15 +1,18 @@
 {
   "name": "bp-mat-tristate-checkbox-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
     "build:lib": "ng build bp-mat-tristate-checkbox",
+    "build:demo": "ng build bp-mat-tristate-checkbox-demo",
     "test": "ng test",
     "test:lib": "ng test bp-mat-tristate-checkbox",
+    "test:demo": "ng test bp-mat-tristate-checkbox-demo",
     "lint": "ng lint",
     "lint:lib": "ng lint bp-mat-tristate-checkbox",
+    "lint:demo": "ng lint bp-mat-tristate-checkbox-demo",
     "e2e": "ng e2e"
   },
   "private": true,

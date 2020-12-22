@@ -7,11 +7,11 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRippleModule } from '@angular/material/core';
 
-import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.component';
+import { MatTristateCheckboxComponent } from './mat-tristate-checkbox.component';
 
 @NgModule({
   declarations: [
-    BpMatTristateCheckboxComponent
+    MatTristateCheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.compo
     MatRippleModule
   ],
   exports: [
-    BpMatTristateCheckboxComponent
+    MatTristateCheckboxComponent
   ]
 })
-export class BpMatTristateCheckboxModule { }
+export class MatTristateCheckboxModule { }

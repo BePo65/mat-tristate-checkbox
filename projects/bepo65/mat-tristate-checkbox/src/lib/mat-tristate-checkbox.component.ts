@@ -4,19 +4,19 @@ import { MatCheckboxDefaultOptions, MAT_CHECKBOX_DEFAULT_OPTIONS } from '@angula
 
 @Component({
   // tslint:disable-next-line: component-selector
-  selector: 'bp-mat-tristate-checkbox',
-  templateUrl: './bp-mat-tristate-checkbox.component.html',
-  styleUrls: ['./bp-mat-tristate-checkbox.component.scss'],
+  selector: 'mat-tristate-checkbox',
+  templateUrl: './mat-tristate-checkbox.component.html',
+  styleUrls: ['./mat-tristate-checkbox.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() =>  BpMatTristateCheckboxComponent),
+      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),
       multi: true,
     },
     { provide: MAT_CHECKBOX_DEFAULT_OPTIONS, useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions }
   ]
 })
-export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
+export class MatTristateCheckboxComponent implements ControlValueAccessor {
   @Input() public color = 'accent';
   @Input() public disabled: boolean;
   @Input() labelPosition: 'before' | 'after' = 'after';
@@ -46,7 +46,7 @@ export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
       console.log('writeValue mit null');
     } else {
       if (!this.chkStates.includes(value)) {
-        throw new Error(`Value '${value}' in  BpMatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+        throw new Error(`Value '${value}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
       }
     }
     this.value = value;

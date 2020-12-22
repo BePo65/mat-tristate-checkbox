@@ -7,7 +7,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRippleModule } from '@angular/material/core';
 
-import { BpMatTristateCheckboxModule } from 'bp-mat-tristate-checkbox';
+import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 
 import { AppComponent } from './app.component';
 
@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
     MatButtonToggleModule,
     MatCheckboxModule,
     MatRippleModule,
-    BpMatTristateCheckboxModule
+    MatTristateCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,16 +8,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.component';
+import { MatTristateCheckboxComponent } from './mat-tristate-checkbox.component';
 
-describe('BpMatTristateCheckboxComponent', () => {
-  let component: BpMatTristateCheckboxComponent;
-  let fixture: ComponentFixture<BpMatTristateCheckboxComponent>;
+describe('MatTristateCheckboxComponent', () => {
+  let component: MatTristateCheckboxComponent;
+  let fixture: ComponentFixture<MatTristateCheckboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        BpMatTristateCheckboxComponent
+        MatTristateCheckboxComponent
       ],
       imports: [
         BrowserModule,
@@ -35,7 +35,7 @@ describe('BpMatTristateCheckboxComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BpMatTristateCheckboxComponent);
+    fixture = TestBed.createComponent(MatTristateCheckboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

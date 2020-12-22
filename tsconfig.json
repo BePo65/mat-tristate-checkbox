@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "bp-mat-tristate-checkbox": [
-        "dist/bp-mat-tristate-checkbox/bp-mat-tristate-checkbox",
-        "dist/bp-mat-tristate-checkbox"
+      "@bepo65/mat-tristate-checkbox": [
+        "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
+        "dist/bepo65/mat-tristate-checkbox"
       ]
     }
   },

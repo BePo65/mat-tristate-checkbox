@@ -3,7 +3,7 @@
     <div class="form-block form-block-row-element">
       <h1>3-State-Checkbox with NgModel</h1>
       <div class="form-row">
-        <bp-mat-tristate-checkbox [(ngModel)]="isHoliday" [color]="'primary'" [disabled]="isHolidayDisabled" [labelPosition]="'before'">is holiday?</bp-mat-tristate-checkbox>
+        <mat-tristate-checkbox [(ngModel)]="isHoliday" [color]="'primary'" [disabled]="isHolidayDisabled" [labelPosition]="'before'">is holiday?</mat-tristate-checkbox>
       </div>
       <div class="form-row">
         <span><mat-checkbox [(ngModel)]="isHolidayDisabled">disable checkbox</mat-checkbox></span>
@@ -20,7 +20,7 @@
       <h1>3-State-Checkbox with Form Control</h1>
       <form [formGroup]="form">
         <div class="form-row">
-          <bp-mat-tristate-checkbox formControlName="hasTrack">has track?</bp-mat-tristate-checkbox>
+          <mat-tristate-checkbox formControlName="hasTrack">has track?</mat-tristate-checkbox>
         </div>
         <div class="form-row">
           <button (click)="resetForm()">Reset Form</button>

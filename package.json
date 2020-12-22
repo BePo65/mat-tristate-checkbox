@@ -1,6 +1,6 @@
 {
   "name": "bp-mat-tristate-checkbox-workspace",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",

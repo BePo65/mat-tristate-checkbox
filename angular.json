@@ -3,46 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bp-mat-tristate-checkbox": {
-      "projectType": "library",
-      "root": "projects/bp-mat-tristate-checkbox",
-      "sourceRoot": "projects/bp-mat-tristate-checkbox/src",
-      "prefix": "bp",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/bp-mat-tristate-checkbox/tsconfig.lib.json",
-            "project": "projects/bp-mat-tristate-checkbox/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/bp-mat-tristate-checkbox/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/bp-mat-tristate-checkbox/src/test.ts",
-            "tsConfig": "projects/bp-mat-tristate-checkbox/tsconfig.spec.json",
-            "karmaConfig": "projects/bp-mat-tristate-checkbox/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/bp-mat-tristate-checkbox/tsconfig.lib.json",
-              "projects/bp-mat-tristate-checkbox/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "bp-mat-tristate-checkbox-demo": {
       "projectType": "application",
       "schematics": {
@@ -165,6 +125,46 @@
           }
         }
       }
+    },
+    "@bepo65/mat-tristate-checkbox": {
+      "projectType": "library",
+      "root": "projects/bepo65/mat-tristate-checkbox",
+      "sourceRoot": "projects/bepo65/mat-tristate-checkbox/src",
+      "prefix": "",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.lib.json",
+            "project": "projects/bepo65/mat-tristate-checkbox/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bepo65/mat-tristate-checkbox/src/test.ts",
+            "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.spec.json",
+            "karmaConfig": "projects/bepo65/mat-tristate-checkbox/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bepo65/mat-tristate-checkbox/tsconfig.lib.json",
+              "projects/bepo65/mat-tristate-checkbox/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
-  "defaultProject": "bp-mat-tristate-checkbox"
+  "defaultProject": "@bepo65/mat-tristate-checkbox"
 }

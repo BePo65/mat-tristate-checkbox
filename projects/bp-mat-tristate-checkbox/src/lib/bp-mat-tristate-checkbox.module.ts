@@ -23,6 +23,8 @@ import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.compo
     MatCheckboxModule,
     MatRippleModule
   ],
-  exports: [BpMatTristateCheckboxComponent]
+  exports: [
+    BpMatTristateCheckboxComponent
+  ]
 })
 export class BpMatTristateCheckboxModule { }

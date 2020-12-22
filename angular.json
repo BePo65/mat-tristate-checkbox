@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/bp-mat-tristate-checkbox",
       "sourceRoot": "projects/bp-mat-tristate-checkbox/src",
-      "prefix": "lib",
+      "prefix": "bp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

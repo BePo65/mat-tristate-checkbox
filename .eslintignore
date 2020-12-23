@@ -1,0 +1,10 @@
+**/*.txt
+coverage/*
+dist/*
+node_modules/*
+src/types/*
+src/polyfills.ts
+src/hacks/private-libs/*
+tools/npm-scripts/*
+karma.conf.js
+karma.*.conf.js

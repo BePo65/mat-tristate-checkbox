@@ -23,7 +23,7 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
 
   public value: boolean | undefined;
 
-  private chkStates: Array<boolean | undefined> = [undefined, false, true];
+  private chkStates: (boolean | undefined)[] = [undefined, false, true];
   private onChange: any;
   private onTouched: any;
 

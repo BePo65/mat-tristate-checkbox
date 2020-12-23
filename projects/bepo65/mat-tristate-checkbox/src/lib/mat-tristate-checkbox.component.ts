@@ -10,8 +10,8 @@ import { MatCheckboxDefaultOptions, MAT_CHECKBOX_DEFAULT_OPTIONS } from '@angula
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),
-      multi: true,
+      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),  // eslint-disable-line no-use-before-define
+      multi: true
     },
     { provide: MAT_CHECKBOX_DEFAULT_OPTIONS, useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions }
   ]
@@ -21,7 +21,7 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   @Input() public disabled: boolean;
   @Input() labelPosition: 'before' | 'after' = 'after';
 
-  public value: boolean | undefined;
+  public value?: boolean;
 
   private chkStates: (boolean | undefined)[] = [undefined, false, true];
   private onChange: any;
@@ -40,13 +40,13 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
    * (Only) on first run with FormControl value is null.
    * @param value - new value for this checkbox
    */
-  writeValue(value: boolean | undefined): void {
+  writeValue(value?: boolean): void {
     if (value === null) {
       value = this.chkStates[0];
       console.log('writeValue mit null');
     } else {
       if (!this.chkStates.includes(value)) {
-        throw new Error(`Value '${value}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+        throw new Error(`Value '${value?.toString()}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
       }
     }
     this.value = value;
@@ -55,7 +55,7 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   /**
    * Cycle value of this checkbox to next value.
    */
-  next() {
+  next(): void {
     if (!this.disabled) {
       this.value = this.chkStates[(this.chkStates.indexOf(this.value) + 1) % this.chkStates.length];
       this.onChange(this.value);

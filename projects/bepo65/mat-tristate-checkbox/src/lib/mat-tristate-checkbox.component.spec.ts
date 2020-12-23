@@ -31,7 +31,7 @@ describe('MatTristateCheckboxComponent', () => {
         MatToolbarModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

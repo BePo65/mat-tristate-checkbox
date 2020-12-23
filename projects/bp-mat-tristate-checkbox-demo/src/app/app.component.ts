@@ -14,7 +14,7 @@ export class AppComponent {
     hasTrack: new FormControl({value: undefined, disabled: false})
   });
 
-  public resetForm() {
+  public resetForm(): void {
     this.form.reset({
       hasTrack: undefined
     });

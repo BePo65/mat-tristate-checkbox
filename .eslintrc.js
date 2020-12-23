@@ -22,7 +22,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project: 'tsconfig.eslint.json',
     ecmaVersion: 9,
     sourceType: 'module',
     extraFileExtensions: ['.json']
@@ -35,7 +35,7 @@ module.exports = {
       node: true,
       typescript: {
         project: [
-          './tsconfig.json'
+          './tsconfig.eslint.json'
         ]
       }
     }
@@ -277,28 +277,8 @@ module.exports = {
         ],
         pathGroups: [
           {
-            pattern: '@lib/**',
+            pattern: '@bepo65/**',
             group: 'parent',
-            position: 'before'
-          },
-          {
-            pattern: '@env/**',
-            group: 'parent',
-            position: 'after'
-          },
-          {
-            pattern: '@config/**',
-            group: 'sibling',
-            position: 'before'
-          },
-          {
-            pattern: '@shared/**',
-            group: 'sibling',
-            position: 'after'
-          },
-          {
-            pattern: '@app/**',
-            group: 'internal',
             position: 'before'
           }
         ],

@@ -1,24 +1,66 @@
-# MatTristateCheckbox
+# Welcome to @bepo65/mat-tristate-checkbox
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
+> &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states.
 
-## Code scaffolding
+## Installation of checkbox
 
-Run `ng generate component component-name --project mat-tristate-checkbox` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project mat-tristate-checkbox`.
-> Note: Don't forget to add `--project mat-tristate-checkbox` or else it will be added to the default project in your `angular.json` file. 
+```sh
+npm install @bepo65/mat-tristate-checkbox
+```
 
-## Build
+## Sample usage of checkbox
 
-Run `ng build mat-tristate-checkbox` to build the project. The build artifacts will be stored in the `dist/` directory.
+Now you can use the mat-tristate-checkbox component in your app components, for example in app.component.ts:
+```sh
+import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
+...
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    ...
+    MatTristateCheckboxModule
+  ],
+  ...
+})
+export class AppModule { }
+```
+And in template file app.component.html:
+```
+<form [formGroup]="form">
+  <mat-tristate-checkbox formControlName="keepMeLoggedIn">remember me</mat-tristate-checkbox>
+</form>
+```
 
-## Publishing
+## Properties of checkbox
 
-After building your library with `ng build mat-tristate-checkbox`, go to the dist folder `cd dist/mat-tristate-checkbox` and run `npm publish`.
+| Name | Description |
+|------|-------------|
+|  @Input()<br />color: ThemePalette  | Theme color palette for the component. Defaults to 'accent' |
+|  @Input()<br />disabled: any  | Whether the checkbox is disabled. |
+|  @Input()<br />labelPosition: 'before' &#124; 'after'  | Whether the label should appear after or before the checkbox. Defaults to 'after' |
 
-## Running unit tests
+## Values of checkbox
+The value aof the checkbox cycle through these values:
+```
+undefined > false > true
+```
 
-Run `ng test mat-tristate-checkbox` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Changelog
+For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**Bernhard Pottler**
+
+  on Github: [@BePo65](https://github.com/BePo65)
+
+
+## License
+
+Copyright © 2020 [Bernhard Pottler](https://github.com/BePo65).
+
+This project and its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE.txt) license.

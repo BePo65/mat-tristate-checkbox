@@ -63,4 +63,4 @@ For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
 Copyright © 2020 [Bernhard Pottler](https://github.com/BePo65).
 
-This project and its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE.txt) license.
+This project and its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE) license.

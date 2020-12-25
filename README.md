@@ -65,6 +65,9 @@ npm run test
 ## Changelog
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
+## Open issues
+As at the moment ng-package doesn't support copying files from parernt folders to dist folder, the CHANGELOG.md must be manually copied after building the dist package of the library.
+
 ## Author
 
 **Bernhard Pottler**

@@ -5,19 +5,19 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --open",
-    "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "ng build @bepo65/mat-tristate-checkbox",
-    "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --prod && cpy CHANGELOG.md projects/bepo65/mat-tristate-checkbox/",
-    "build:demo": "ng build bp-mat-tristate-checkbox-demo",
-    "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
-    "test:lib": "ng test @bepo65/mat-tristate-checkbox",
-    "test:demo": "ng test bp-mat-tristate-checkbox-demo",
     "lint": "npm run lint:lib && npm run lint:demo && npm run eslint",
     "lint:lib": "ng lint @bepo65/mat-tristate-checkbox",
     "lint:demo": "ng lint bp-mat-tristate-checkbox-demo",
     "eslint": "eslint --report-unused-disable-directives .eslintrc.js \"./projects/**/{src,e2e}/**/*.{ts,tsx,js,json,yaml}\"",
-    "e2e": "ng e2e"
+    "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
+    "test:lib": "ng test @bepo65/mat-tristate-checkbox",
+    "test:demo": "ng test bp-mat-tristate-checkbox-demo",
+    "e2e": "ng e2e",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "ng build @bepo65/mat-tristate-checkbox",
+    "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --prod && cpy CHANGELOG.md projects/bepo65/mat-tristate-checkbox/",
+    "build:demo": "ng build bp-mat-tristate-checkbox-demo",
+    "start": "ng serve --open"
   },
   "private": true,
   "dependencies": {

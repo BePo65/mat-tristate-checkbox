@@ -65,6 +65,13 @@ npm run test
 ## Changelog
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
+## Contributing
+Generation of [CHANGELOG.md](CHANGELOG.md) with `standard-changelog`.
+The following is the list of upported scopes:
+* checkbox
+* demo
+* none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
+
 ## Open issues
 As at the moment ng-package doesn't support copying files from parernt folders to dist folder, the CHANGELOG.md must be manually copied after building the dist package of the library.
 

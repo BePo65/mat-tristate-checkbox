@@ -9,6 +9,7 @@
     "lint:lib": "ng lint @bepo65/mat-tristate-checkbox",
     "lint:demo": "ng lint bp-mat-tristate-checkbox-demo",
     "eslint": "eslint --report-unused-disable-directives .eslintrc.js \"./projects/**/{src,e2e}/**/*.{ts,tsx,js,json,yaml}\"",
+    "lint-commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
     "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
     "test:lib": "ng test @bepo65/mat-tristate-checkbox",
     "test:demo": "ng test bp-mat-tristate-checkbox-demo",

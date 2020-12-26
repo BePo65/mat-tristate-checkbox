@@ -17,7 +17,8 @@
     "build:lib": "ng build @bepo65/mat-tristate-checkbox",
     "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --prod && cpy CHANGELOG.md projects/bepo65/mat-tristate-checkbox/",
     "build:demo": "ng build bp-mat-tristate-checkbox-demo",
-    "lint:commits": "commitlint --from 7e7fdd722 --to HEAD --verbose",
+    "init-changelog": "standard-changelog -i CHANGELOG.md --same-file --first-release",
+    "release": "standard-changelog -i CHANGELOG.md --same-file --prerelease pre && git add CHANGELOG.md",
     "start": "ng serve --open"
   },
   "private": true,

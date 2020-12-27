@@ -20,6 +20,14 @@ export class AppComponent {
     });
   }
 
+  public disableHasTrack($event: any): void {
+    if ($event.checked) {
+      this.form.get('hasTrack').disable();
+    } else {
+      this.form.get('hasTrack').enable();
+    }
+  }
+
   public formatTristateValue(value: any): string {
     return (value === undefined) || (value === null) ? '---' : value;
   }

@@ -5,8 +5,9 @@
       <div class="form-row">
         <mat-tristate-checkbox [(ngModel)]="isHoliday" [color]="'primary'" [disabled]="isHolidayDisabled" [labelPosition]="'before'">is holiday?</mat-tristate-checkbox>
       </div>
+      <hr class="form-row-separator">
       <div class="form-row">
-        <span><mat-checkbox [(ngModel)]="isHolidayDisabled">disable checkbox</mat-checkbox></span>
+        <span><mat-checkbox [(ngModel)]="isHolidayDisabled" [labelPosition]="'before'">disable checkbox</mat-checkbox></span>
       </div>
       <div class="result-rows">
         <div class="result-row">
@@ -26,6 +27,10 @@
           <button (click)="resetForm()">Reset Form</button>
         </div>
       </form>
+      <hr class="form-row-separator">
+      <div class="form-row">
+        <span><mat-checkbox (change)="disableHasTrack($event)">disable checkbox</mat-checkbox></span>
+      </div>
       <div class="result-rows">
         <div class="result-row">
           <span class="result-label">Tristate variable value in app.component:&nbsp;</span><span>{{formatTristateValue(form.get('hasTrack').value)}}</span>

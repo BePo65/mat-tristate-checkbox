@@ -85,7 +85,17 @@
     }
   },
   "standard-version": {
+    "packageFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      }
+    ],
     "bumpFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      },
       {
         "filename": "projects/bepo65/mat-tristate-checkbox/package.json",
         "type": "json"

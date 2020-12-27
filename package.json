@@ -18,8 +18,8 @@
     "build:lib": "ng build @bepo65/mat-tristate-checkbox",
     "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --prod && cpy CHANGELOG.md projects/bepo65/mat-tristate-checkbox/",
     "build:demo": "ng build mat-tristate-checkbox-demo",
-    "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
-    "release": "standard-version -i CHANGELOG.md --same-file --prerelease pre && git add CHANGELOG.md",
+    "init-changelog": "standard-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
+    "release": "standard-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open"
   },
   "private": true,

@@ -39,3 +39,44 @@
     </div>
   </div>
 </div>
+<div class="flex-container">
+  <div class="flex-child">
+    <div class="form-block form-block-row-element">
+      <h1>Mat-Checkbox with NgModel</h1>
+      <div class="form-row">
+        <mat-checkbox [(ngModel)]="isCustomer" [color]="'primary'" [disabled]="isCustomerDisabled" [labelPosition]="'before'">is customer?</mat-checkbox>
+      </div>
+      <hr class="form-row-separator">
+      <div class="form-row">
+        <span><mat-checkbox [(ngModel)]="isCustomerDisabled" [labelPosition]="'before'">disable checkbox</mat-checkbox></span>
+      </div>
+      <div class="result-rows">
+        <div class="result-row">
+          <span class="result-label">Variable value in app.component:&nbsp;</span><span>{{isCustomer}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-child">
+    <div class="form-block form-block-row-element">
+      <h1>Mat-Checkbox with Form Control</h1>
+      <form [formGroup]="form2">
+        <div class="form-row">
+          <mat-checkbox formControlName="isCustomer">is customer?</mat-checkbox>
+        </div>
+        <div class="form-row">
+          <button (click)="resetForm2()">Reset Form</button>
+        </div>
+      </form>
+      <hr class="form-row-separator">
+      <div class="form-row">
+        <span><mat-checkbox (change)="disableIsCustomer($event)">disable checkbox</mat-checkbox></span>
+      </div>
+      <div class="result-rows">
+        <div class="result-row">
+          <span class="result-label">Variable value in app.component:&nbsp;</span><span>{{form2.get('isCustomer').value}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

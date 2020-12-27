@@ -9,9 +9,15 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AppComponent {
   isHoliday = undefined;
   isHolidayDisabled = false;
+  isCustomer = false;
+  isCustomerDisabled = false;
 
   public form = new FormGroup({
     hasTrack: new FormControl({value: undefined, disabled: false})
+  });
+
+  public form2 = new FormGroup({
+    isCustomer: new FormControl({value: false, disabled: false})
   });
 
   public resetForm(): void {
@@ -25,6 +31,20 @@ export class AppComponent {
       this.form.get('hasTrack').disable();
     } else {
       this.form.get('hasTrack').enable();
+    }
+  }
+
+  public resetForm2(): void {
+    this.form2.reset({
+      isCustomer: false
+    });
+  }
+
+  public disableIsCustomer($event: any): void {
+    if ($event.checked) {
+      this.form2.get('isCustomer').disable();
+    } else {
+      this.form2.get('isCustomer').enable();
     }
   }
 

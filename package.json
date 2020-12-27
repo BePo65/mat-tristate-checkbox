@@ -83,5 +83,13 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "standard-version": {
+    "bumpFiles": [
+      {
+        "filename": "projects/bepo65/mat-tristate-checkbox/package.json",
+        "type": "json"
+      }
+    ]
   }
 }

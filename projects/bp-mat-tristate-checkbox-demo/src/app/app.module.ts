@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRippleModule } from '@angular/material/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.component';
+import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    BpMatTristateCheckboxComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,8 +23,10 @@ import { BpMatTristateCheckboxComponent } from './bp-mat-tristate-checkbox.compo
     MatButtonModule,
     MatButtonToggleModule,
     MatCheckboxModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTristateCheckboxModule
   ],
-  exports: [BpMatTristateCheckboxComponent]
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class BpMatTristateCheckboxModule { }
+export class AppModule { }

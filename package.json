@@ -1,13 +1,25 @@
 {
   "name": "bp-mat-tristate-checkbox-workspace",
-  "version": "0.0.0",
+  "version": "1.0.0-pre.0",
+  "description": "3-state checkbox for Angular with Material as library component with demo project",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "npm run lint:lib && npm run lint:demo && npm run eslint",
+    "lint:lib": "ng lint @bepo65/mat-tristate-checkbox",
+    "lint:demo": "ng lint bp-mat-tristate-checkbox-demo",
+    "eslint": "eslint --report-unused-disable-directives .eslintrc.js \"./projects/**/{src,e2e}/**/*.{ts,tsx,js,json,yaml}\"",
+    "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
+    "test:lib": "ng test @bepo65/mat-tristate-checkbox",
+    "test:demo": "ng test bp-mat-tristate-checkbox-demo",
+    "e2e": "ng e2e",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "ng build @bepo65/mat-tristate-checkbox",
+    "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --prod && cpy CHANGELOG.md projects/bepo65/mat-tristate-checkbox/",
+    "build:demo": "ng build bp-mat-tristate-checkbox-demo",
+    "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
+    "release": "standard-version -i CHANGELOG.md --same-file --prerelease pre && git add CHANGELOG.md",
+    "start": "ng serve --open"
   },
   "private": true,
   "dependencies": {
@@ -30,10 +42,24 @@
     "@angular-devkit/build-ng-packagr": "~0.901.13",
     "@angular/cli": "~9.1.13",
     "@angular/compiler-cli": "~9.1.13",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
     "codelyzer": "^5.1.2",
+    "cpy-cli": "^3.1.1",
+    "eslint": "^7.16.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jasmine": "^4.1.1",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "husky": "^4.3.6",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -43,9 +69,18 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "ng-packagr": "^9.0.0",
     "protractor": "~7.0.0",
+    "standard-version": "^9.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.18.0",
     "stylus": "^0.54.8",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }

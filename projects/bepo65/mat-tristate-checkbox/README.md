@@ -2,7 +2,7 @@
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
 
-> &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states. This repository contains the checkbox component and a demo project.
+> &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states.
 
 ## Installation of checkbox
 
@@ -49,31 +49,8 @@ The value aof the checkbox cycle through these values:
 undefined > false > true
 ```
 
-## Usage of demo project
-
-```sh
-npm install
-npm run start
-```
-
-## Run all tests
-
-```sh
-npm run test
-```
-
 ## Changelog
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
-
-## Contributing
-Generation of [CHANGELOG.md](CHANGELOG.md) with `standard-changelog`.
-The following is the list of upported scopes:
-* checkbox
-* demo
-* none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
-
-## Open issues
-As at the moment ng-package doesn't support copying files from parernt folders to dist folder, the CHANGELOG.md must be manually copied after building the dist package of the library.
 
 ## Author
 
@@ -86,4 +63,4 @@ As at the moment ng-package doesn't support copying files from parernt folders t
 
 Copyright © 2020 [Bernhard Pottler](https://github.com/BePo65).
 
-This project and all of its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE) license.
+This project and its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE) license.

@@ -1,0 +1,35 @@
+.flex-container {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  }
+
+.flex-item {
+  align-self: auto;
+  flex: 0 1 auto;
+  }
+
+.form-block {
+  background-color: yellow;
+  margin: 1em;
+  padding: 0.5em 0.5em 0.5em;
+  width: 32em;
+}
+.form-block-row-element {
+  min-height: 144px;
+}
+.form-row {
+  margin: 0.25em 0;
+}
+.result-rows {
+  margin: 1.5em 0 0.25em;
+}
+.result-row {
+  margin: 0.5em 0 0;
+}
+.result-label {
+  padding: 0 0.25em 0 0;
+}

@@ -4,26 +4,26 @@ import { MatCheckboxDefaultOptions, MAT_CHECKBOX_DEFAULT_OPTIONS } from '@angula
 
 @Component({
   // tslint:disable-next-line: component-selector
-  selector: 'bp-mat-tristate-checkbox',
-  templateUrl: './bp-mat-tristate-checkbox.component.html',
-  styleUrls: ['./bp-mat-tristate-checkbox.component.scss'],
+  selector: 'mat-tristate-checkbox',
+  templateUrl: './mat-tristate-checkbox.component.html',
+  styleUrls: ['./mat-tristate-checkbox.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() =>  BpMatTristateCheckboxComponent),
-      multi: true,
+      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),  // eslint-disable-line no-use-before-define
+      multi: true
     },
     { provide: MAT_CHECKBOX_DEFAULT_OPTIONS, useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions }
   ]
 })
-export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
+export class MatTristateCheckboxComponent implements ControlValueAccessor {
   @Input() public color = 'accent';
   @Input() public disabled: boolean;
   @Input() labelPosition: 'before' | 'after' = 'after';
 
-  public value: boolean | undefined;
+  public value?: boolean;
 
-  private chkStates: Array<boolean | undefined> = [undefined, false, true];
+  private chkStates: (boolean | undefined)[] = [undefined, false, true];
   private onChange: any;
   private onTouched: any;
 
@@ -37,11 +37,17 @@ export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
 
   /**
    * Set value of this checkbox to given value.
+   * (Only) on first run with FormControl value is null.
    * @param value - new value for this checkbox
    */
-  writeValue(value: boolean | undefined): void {
-    if (!this.chkStates.includes(value)) {
-      throw new Error(`Value '${value}' in  BpMatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+  writeValue(value?: boolean): void {
+    if (value === null) {
+      value = this.chkStates[0];
+      console.log('writeValue mit null');
+    } else {
+      if (!this.chkStates.includes(value)) {
+        throw new Error(`Value '${value?.toString()}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+      }
     }
     this.value = value;
   }
@@ -49,7 +55,7 @@ export class BpMatTristateCheckboxComponent implements ControlValueAccessor {
   /**
    * Cycle value of this checkbox to next value.
    */
-  next() {
+  next(): void {
     if (!this.disabled) {
       this.value = this.chkStates[(this.chkStates.indexOf(this.value) + 1) % this.chkStates.length];
       this.onChange(this.value);

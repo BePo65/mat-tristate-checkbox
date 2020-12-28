@@ -1,0 +1,7 @@
+**/*.txt
+coverage/*
+dist/*
+node_modules/*
+**/src/polyfills.ts
+**/karma.conf.js
+**/karma.*.conf.js

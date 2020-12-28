@@ -99,6 +99,14 @@
       {
         "filename": "projects/bepo65/mat-tristate-checkbox/package.json",
         "type": "json"
+      },
+      {
+        "filename": "README.md",
+        "updater": "tools/npm-scripts/readme-updater.js"
+      },
+      {
+        "filename": "projects/bepo65/mat-tristate-checkbox/README.md",
+        "updater": "tools/npm-scripts/readme-updater.js"
       }
     ]
   }

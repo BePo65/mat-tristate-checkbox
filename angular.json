@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bp-mat-tristate-checkbox-demo": {
+    "mat-tristate-checkbox-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/bp-mat-tristate-checkbox-demo",
-      "sourceRoot": "projects/bp-mat-tristate-checkbox-demo/src",
+      "root": "projects/mat-tristate-checkbox-demo",
+      "sourceRoot": "projects/mat-tristate-checkbox-demo/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bp-mat-tristate-checkbox-demo",
-            "index": "projects/bp-mat-tristate-checkbox-demo/src/index.html",
-            "main": "projects/bp-mat-tristate-checkbox-demo/src/main.ts",
-            "polyfills": "projects/bp-mat-tristate-checkbox-demo/src/polyfills.ts",
-            "tsConfig": "projects/bp-mat-tristate-checkbox-demo/tsconfig.app.json",
+            "outputPath": "dist/mat-tristate-checkbox-demo",
+            "index": "projects/mat-tristate-checkbox-demo/src/index.html",
+            "main": "projects/mat-tristate-checkbox-demo/src/main.ts",
+            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/bp-mat-tristate-checkbox-demo/src/favicon.ico",
-              "projects/bp-mat-tristate-checkbox-demo/src/assets"
+              "projects/mat-tristate-checkbox-demo/src/favicon.ico",
+              "projects/mat-tristate-checkbox-demo/src/assets"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "projects/bp-mat-tristate-checkbox-demo/src/styles.scss"
+              "projects/mat-tristate-checkbox-demo/src/styles.scss"
             ],
             "scripts": []
           },
@@ -37,8 +37,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/bp-mat-tristate-checkbox-demo/src/environments/environment.ts",
-                  "with": "projects/bp-mat-tristate-checkbox-demo/src/environments/environment.prod.ts"
+                  "replace": "projects/mat-tristate-checkbox-demo/src/environments/environment.ts",
+                  "with": "projects/mat-tristate-checkbox-demo/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -67,34 +67,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bp-mat-tristate-checkbox-demo:build"
+            "browserTarget": "mat-tristate-checkbox-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bp-mat-tristate-checkbox-demo:build:production"
+              "browserTarget": "mat-tristate-checkbox-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bp-mat-tristate-checkbox-demo:build"
+            "browserTarget": "mat-tristate-checkbox-demo:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/bp-mat-tristate-checkbox-demo/src/test.ts",
-            "polyfills": "projects/bp-mat-tristate-checkbox-demo/src/polyfills.ts",
-            "tsConfig": "projects/bp-mat-tristate-checkbox-demo/tsconfig.spec.json",
-            "karmaConfig": "projects/bp-mat-tristate-checkbox-demo/karma.conf.js",
+            "main": "projects/mat-tristate-checkbox-demo/src/test.ts",
+            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-tristate-checkbox-demo/karma.conf.js",
             "assets": [
-              "projects/bp-mat-tristate-checkbox-demo/src/favicon.ico",
-              "projects/bp-mat-tristate-checkbox-demo/src/assets"
+              "projects/mat-tristate-checkbox-demo/src/favicon.ico",
+              "projects/mat-tristate-checkbox-demo/src/assets"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "projects/bp-mat-tristate-checkbox-demo/src/styles.scss"
+              "projects/mat-tristate-checkbox-demo/src/styles.scss"
             ],
             "scripts": []
           }
@@ -103,9 +103,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/bp-mat-tristate-checkbox-demo/tsconfig.app.json",
-              "projects/bp-mat-tristate-checkbox-demo/tsconfig.spec.json",
-              "projects/bp-mat-tristate-checkbox-demo/e2e/tsconfig.json"
+              "projects/mat-tristate-checkbox-demo/tsconfig.app.json",
+              "projects/mat-tristate-checkbox-demo/tsconfig.spec.json",
+              "projects/mat-tristate-checkbox-demo/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -115,12 +115,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/bp-mat-tristate-checkbox-demo/e2e/protractor.conf.js",
-            "devServerTarget": "bp-mat-tristate-checkbox-demo:serve"
+            "protractorConfig": "projects/mat-tristate-checkbox-demo/e2e/protractor.conf.js",
+            "devServerTarget": "mat-tristate-checkbox-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bp-mat-tristate-checkbox-demo:serve:production"
+              "devServerTarget": "mat-tristate-checkbox-demo:serve:production"
             }
           }
         }

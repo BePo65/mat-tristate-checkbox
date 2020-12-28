@@ -13,7 +13,7 @@
   }
 
 .form-block {
-  background-color: yellow;
+  border: 3px outset black;
   margin: 1em;
   padding: 0.5em 0.5em 0.5em;
   width: 32em;
@@ -23,6 +23,9 @@
 }
 .form-row {
   margin: 0.25em 0;
+}
+.form-row-separator {
+  margin: 1em 0;
 }
 .result-rows {
   margin: 1.5em 0 0.25em;

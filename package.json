@@ -31,7 +31,6 @@
     "release": "standard-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.13",
     "@angular/cdk": "^9.2.4",

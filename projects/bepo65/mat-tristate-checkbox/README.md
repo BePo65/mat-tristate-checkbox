@@ -4,6 +4,10 @@
 
 > &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states.
 
+## Prerequisites
+
+The package can be used in angular apps with Angular Material installed.
+
 ## Installation of checkbox
 
 ```sh
@@ -13,7 +17,8 @@ npm install @bepo65/mat-tristate-checkbox
 ## Sample usage of checkbox
 
 Now you can use the mat-tristate-checkbox component in your app components, for example in app.component.ts:
-```sh
+
+```javascript
 import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 ...
 @NgModule({
@@ -28,12 +33,18 @@ import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 })
 export class AppModule { }
 ```
+
 And in template file app.component.html:
-```
+
+```html
 <form [formGroup]="form">
   <mat-tristate-checkbox formControlName="keepMeLoggedIn">remember me</mat-tristate-checkbox>
 </form>
 ```
+
+## Demo project
+
+There is a demo project on  [stackblitz](https://stackblitz.com/edit/angular-mat-tristate-cb-demo) that shows a simple use case.
 
 ## Properties of checkbox
 

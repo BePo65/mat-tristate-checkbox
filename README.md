@@ -4,6 +4,10 @@
 
 > &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states. This repository contains the checkbox component and a demo project.
 
+## Prerequisites
+
+The package can be used in angular apps with Angular Material installed.
+
 ## Installation of checkbox
 
 ```sh
@@ -13,7 +17,7 @@ npm install @bepo65/mat-tristate-checkbox
 ## Sample usage of checkbox
 
 Now you can use the mat-tristate-checkbox component in your app components, for example in app.component.ts:
-```sh
+```javascript
 import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 ...
 @NgModule({
@@ -29,11 +33,15 @@ import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 export class AppModule { }
 ```
 And in template file app.component.html:
-```
+```html
 <form [formGroup]="form">
   <mat-tristate-checkbox formControlName="keepMeLoggedIn">remember me</mat-tristate-checkbox>
 </form>
 ```
+
+## Demo project
+
+There is a demo project on  [stackblitz](https://stackblitz.com/edit/angular-mat-tristate-cb-demo) that shows a simple use case.
 
 ## Properties of checkbox
 
@@ -66,14 +74,11 @@ npm run test
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
 ## Contributing
-Generation of [CHANGELOG.md](CHANGELOG.md) with `standard-changelog`.
-The following is the list of upported scopes:
+The [CHANGELOG.md](CHANGELOG.md) is generated with `standard-changelog` (`npm run release`).
+The following is the list of supported scopes:
 * checkbox
 * demo
 * none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
-
-## Open issues
-As at the moment ng-package doesn't support copying files from parernt folders to dist folder, the CHANGELOG.md must be manually copied after building the dist package of the library.
 
 ## Author
 

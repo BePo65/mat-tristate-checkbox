@@ -2,7 +2,16 @@
   "name": "@bepo65/mat-tristate-checkbox",
   "version": "1.0.2",
   "description": "3-state checkbox for Angular with Material as library component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BePo65/mat-tristate-checkbox.git"
+  },
+  "author": "Bernhard Pottler",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BePo65/mat-tristate-checkbox/issues"
+  },
+  "homepage": "https://github.com/BePo65/mat-tristate-checkbox",
   "peerDependencies": {
     "@angular/animations": "~9.1.13",
     "@angular/cdk": "^9.2.4",

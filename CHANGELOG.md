@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v1.0.5...v2.0.0) (2021-02-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to Angular v10
+
+### build
+
+* run update wizards for migration to Angular v10 ([470d6f0](https://github.com/BePo65/mat-tristate-checkbox/commit/470d6f0cf096f6239bd447d3398d4d3bb0a16501))
+
 ### [1.0.5](https://github.com/BePo65/mat-tristate-checkbox/compare/v1.0.4...v1.0.5) (2020-12-29)
 
 

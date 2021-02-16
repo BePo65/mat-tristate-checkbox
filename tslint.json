@@ -4,6 +4,13 @@
     "codelyzer"
   ],
   "rules": {
+    "align": {
+      "options": [
+        "parameters",
+        "statements"
+      ]
+    },
+    "arrow-return-shorthand": true,
     "component-class-suffix": true,
     "component-selector": [
       true,
@@ -12,6 +19,7 @@
       "kebab-case"
     ],
     "contextual-lifecycle": true,
+    "curly": true,
     "deprecation": {
       "severity": "warning"
     },
@@ -22,6 +30,7 @@
       "app",
       "camelCase"
     ],
+    "eofline": true,
     "import-spacing": true,
     "indent": [
       true,
@@ -47,6 +56,20 @@
     "no-outputs-metadata-property": true,
     "no-redundant-jsdoc": true,
     "no-string-literal": false,
+    "semicolon": {
+      "options": [
+        "always"
+      ]
+    },
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
@@ -67,6 +90,13 @@
           "property-declaration": "onespace",
           "variable-declaration": "onespace"
         }
+      ]
+    },
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
       ]
     },
     "whitespace": {

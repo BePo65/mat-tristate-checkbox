@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-The package can be used in angular apps with Angular Material installed.
+The package can be used in Angular apps with Angular Material installed. This Version requires Angular 11.
 
 ## Installation of checkbox
 

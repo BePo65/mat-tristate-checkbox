@@ -80,6 +80,8 @@ The following is the list of supported scopes:
 * demo
 * none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
 
+Due to a problem with npm (see angular-cli: [Unmet peer dependency ajv@6 #21509](https://github.com/angular/angular-cli/issues/21509)) after installing all packages in this project (`npm i`) ajv@^6.9.1 must be installed manually.
+
 ## Author
 
 **Bernhard Pottler**

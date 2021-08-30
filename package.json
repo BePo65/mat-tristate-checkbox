@@ -14,10 +14,7 @@
   "homepage": "https://github.com/BePo65/mat-tristate-checkbox",
   "scripts": {
     "ng": "ng",
-    "lint": "npm run lint:lib && npm run lint:demo && npm run eslint",
-    "lint:lib": "ng lint @bepo65/mat-tristate-checkbox",
-    "lint:demo": "ng lint mat-tristate-checkbox-demo",
-    "eslint": "eslint --report-unused-disable-directives .eslintrc.js \"./projects/**/{src,e2e}/**/*.{ts,tsx,js,json,yaml}\"",
+    "lint": "eslint --report-unused-disable-directives .eslintrc.js \"./projects/**/{src,e2e}/**/*.{ts,tsx,js,json,yaml}\"",
     "lint-commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
     "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
     "test:lib": "ng test @bepo65/mat-tristate-checkbox",
@@ -57,7 +54,6 @@
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^14.14.30",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
-    "@typescript-eslint/eslint-plugin-tslint": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
     "cpy-cli": "^3.1.1",
     "eslint": "^7.32.0",
@@ -83,7 +79,6 @@
     "stylelint-scss": "^3.20.1",
     "stylus": "^0.54.8",
     "ts-node": "~9.1.1",
-    "tslint": "~6.1.0",
     "typescript": "~4.3.5"
   },
   "standard-version": {

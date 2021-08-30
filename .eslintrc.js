@@ -42,7 +42,6 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
-    '@typescript-eslint/tslint',
     'prefer-arrow',
     'import',
     'jsdoc',

@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v3.0.0...v4.0.0) (2021-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to Angular v12
+
+### Bug Fixes
+
+* update wrong dependencies in generated library ([1502c2d](https://github.com/BePo65/mat-tristate-checkbox/commit/1502c2dc45a02c75eb3074950de30eb742e24db8))
+
+
+### build
+
+* update angular to v12 - step 1 ([be13376](https://github.com/BePo65/mat-tristate-checkbox/commit/be133761f0ed6d1719d798d0ea150014c0f7fe42))
+
 ## [3.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v2.0.1...v3.0.0) (2021-02-17)
 
 

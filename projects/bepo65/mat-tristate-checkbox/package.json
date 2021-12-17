@@ -1,6 +1,6 @@
 {
   "name": "@bepo65/mat-tristate-checkbox",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "3-state checkbox for Angular with Material as library component",
   "repository": {
     "type": "git",

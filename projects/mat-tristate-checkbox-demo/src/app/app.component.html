@@ -2,6 +2,7 @@
   <div class="flex-child">
     <div class="form-block form-block-row-element">
       <h1>3-State-Checkbox with NgModel</h1>
+      <div class="color-description">color: "Primary"</div>
       <div class="form-row">
         <mat-tristate-checkbox [(ngModel)]="isHoliday" [color]="'primary'" [disabled]="isHolidayDisabled" [labelPosition]="'before'">is holiday?</mat-tristate-checkbox>
       </div>
@@ -19,6 +20,7 @@
   <div class="flex-child">
     <div class="form-block form-block-row-element">
       <h1>3-State-Checkbox with Form Control</h1>
+      <div class="color-description">color: "Accent"</div>
       <form [formGroup]="form">
         <div class="form-row">
           <mat-tristate-checkbox formControlName="hasTrack">has track?</mat-tristate-checkbox>
@@ -43,8 +45,9 @@
   <div class="flex-child">
     <div class="form-block form-block-row-element">
       <h1>Mat-Checkbox with NgModel</h1>
+      <div class="color-description">color: "Accent"</div>
       <div class="form-row">
-        <mat-checkbox [(ngModel)]="isCustomer" [color]="'primary'" [disabled]="isCustomerDisabled" [labelPosition]="'before'">is customer?</mat-checkbox>
+        <mat-checkbox [(ngModel)]="isCustomer" [disabled]="isCustomerDisabled" [labelPosition]="'before'">is customer?</mat-checkbox>
       </div>
       <hr class="form-row-separator">
       <div class="form-row">
@@ -60,9 +63,10 @@
   <div class="flex-child">
     <div class="form-block form-block-row-element">
       <h1>Mat-Checkbox with Form Control</h1>
+      <div class="color-description">color: "Primary"</div>
       <form [formGroup]="form2">
         <div class="form-row">
-          <mat-checkbox formControlName="isCustomer">is customer?</mat-checkbox>
+          <mat-checkbox formControlName="isCustomer" [color]="'primary'">is customer?</mat-checkbox>
         </div>
         <div class="form-row">
           <button (click)="resetForm2()">Reset Form</button>

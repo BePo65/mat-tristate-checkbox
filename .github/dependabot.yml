@@ -9,7 +9,7 @@ updates:
     - dependency-name: "@angular/*"
       versions: ["^13.0.0"]
     - dependency-name: "@angular-devkit/build-angular"
-      versions: ["^13.0.0"]
+      versions: ["^13.1.0"]
     - dependency-name: "rxjs"
       versions: ["^7.0.0"]
     - dependency-name: "ng-packagr"
@@ -19,4 +19,4 @@ updates:
     - dependency-name: "@types/node"
       versions: ["^17.0.0"]
     - dependency-name: "typescript"
-      versions: ["~4.5.0"]
+      versions: ["~4.4.0", "~4.5.0"]

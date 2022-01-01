@@ -76,7 +76,7 @@
     "ng-packagr": "^12.2.6",
     "protractor": "~7.0.0",
     "standard-version": "^9.3.2",
-    "stylelint": "^14.1.0",
+    "stylelint": "^14.2.0",
     "stylelint-config-recommended-scss": "^5.0.2",
     "stylelint-config-standard": "^24.0.0",
     "stylus": "^0.56.0",

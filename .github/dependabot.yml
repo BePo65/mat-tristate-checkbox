@@ -7,16 +7,16 @@ updates:
   open-pull-requests-limit: 10
   ignore:
     - dependency-name: "@angular/*"
-      versions: ["^13.0.0"]
+      versions: ["13.x"]
     - dependency-name: "@angular-devkit/build-angular"
-      versions: ["^13.1.0"]
+      versions: ["13.x"]
     - dependency-name: "rxjs"
-      versions: ["^7.0.0"]
+      versions: ["7.x"]
     - dependency-name: "ng-packagr"
-      versions: ["^13.0.0"]
+      versions: ["13.x"]
     - dependency-name: "ajv"
-      versions: ["^7.0.0", "^8.0.0"]
+      versions: ["7.x", "8.x"]
     - dependency-name: "@types/node"
-      versions: ["^17.0.0"]
+      versions: ["17.x"]
     - dependency-name: "typescript"
-      versions: ["~4.4.0", "~4.5.0"]
+      versions: ["4.4.x", "4.5.x"]

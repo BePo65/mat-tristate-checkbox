@@ -10,6 +10,16 @@ updates:
       versions: ["13.x"]
     - dependency-name: "@angular-devkit/build-angular"
       versions: ["13.x"]
+    - dependency-name: "@angular-eslint/builder"
+      versions: ["13.x"]
+    - dependency-name: "@angular-eslint/eslint-plugin"
+      versions: ["13.x"]
+    - dependency-name: "@angular-eslint/eslint-plugin-template"
+      versions: ["13.x"]
+    - dependency-name: "@angular-eslint/schematics"
+      versions: ["13.x"]
+    - dependency-name: "@angular-eslint/template-parser"
+      versions: ["13.x"]
     - dependency-name: "rxjs"
       versions: ["7.x"]
     - dependency-name: "ng-packagr"
@@ -18,5 +28,11 @@ updates:
       versions: ["7.x", "8.x"]
     - dependency-name: "@types/node"
       versions: ["17.x"]
+    - dependency-name: "eslint"
+      versions: ["8.x"]
+    - dependency-name: "@typescript-eslint/eslint-plugin"
+      versions: ["5.x"]
+    - dependency-name: "@typescript-eslint/parser"
+      versions: ["5.x"]
     - dependency-name: "typescript"
       versions: ["4.4.x", "4.5.x"]

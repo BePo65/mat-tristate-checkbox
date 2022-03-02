@@ -80,6 +80,17 @@ The following is the list of supported scopes:
 * demo
 * none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
 
+## Release hints
+Required versions (e.g. caused by version dependencies):
+| Package | Version | Remark |
+|-----|------------------|---|
+| @angular-eslint/* | 13.x.y | requires angular V13 |
+| @angular-eslint/* | 13.x.y | requires eslint V8 |
+| @typescript-eslint/* | 5.x.y | requires eslint V8 |
+
+Updating to Angular V13 is still under construction.
+
+
 ## Author
 
 **Bernhard Pottler**

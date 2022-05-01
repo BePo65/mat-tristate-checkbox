@@ -43,7 +43,7 @@
     "@angular/router": "~12.2.16",
     "ajv": "^6.9.1",
     "rxjs": "~6.6.3",
-    "tslib": "^2.1.0",
+    "tslib": "^2.4.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

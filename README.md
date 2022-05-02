@@ -91,6 +91,8 @@ Required versions (e.g. caused by version dependencies):
 
 Updating to Angular V13 is still under construction.
 
+## Hacks
++ `ejs` was installed to solve a dependency of '@angular-eslint/builder' found by github dependabot. Can be deleted from package.json, when '@angular-eslint/builder' is updated.
 
 ## Author
 

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [13.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v4.1.8...v13.0.0) (2022-05-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Updated to Angular 13
+
+* Merge branch 'angular13' ([788a45e](https://github.com/BePo65/mat-tristate-checkbox/commit/788a45ef83990eeccf976bab0984feaee8c1bef9))
+
 ### [4.1.8](https://github.com/BePo65/mat-tristate-checkbox/compare/v4.1.7...v4.1.8) (2022-02-14)
 
 ### [4.1.7](https://github.com/BePo65/mat-tristate-checkbox/compare/v4.1.6...v4.1.7) (2022-02-12)

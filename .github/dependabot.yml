@@ -26,7 +26,7 @@ updates:
       versions: ["13.x", "14.x"]
     - dependency-name: "ajv"
       versions: ["7.x", "8.x"]
-    - dependency-name: "zone"
+    - dependency-name: "zone.js"
       versions: ["0.11.6"]
     - dependency-name: "@types/node"
       versions: ["17.x", "18.x"]

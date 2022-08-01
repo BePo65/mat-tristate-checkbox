@@ -27,7 +27,7 @@ updates:
     - dependency-name: "ajv"
       versions: ["7.x", "8.x"]
     - dependency-name: "zone.js"
-      versions: ["0.11.6"]
+      versions: ["0.11.6", "0.11.7"]
     - dependency-name: "@types/node"
       versions: ["17.x", "18.x"]
     - dependency-name: "eslint"

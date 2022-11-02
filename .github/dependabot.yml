@@ -29,7 +29,7 @@ updates:
     - dependency-name: "zone.js"
       versions: ["0.11.6", "0.11.7", "0.11.8"]
     - dependency-name: "@types/node"
-      versions: ["17.x", "18.x"]
+      versions: ["17.x", "18.x", "19.x"]
     - dependency-name: "eslint"
       versions: ["8.x"]
     - dependency-name: "@typescript-eslint/eslint-plugin"

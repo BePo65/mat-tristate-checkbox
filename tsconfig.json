@@ -10,21 +10,26 @@
     "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "ES2022",
     "lib": [
       "es2018",
       "dom"
     ],
     "plugins": [
-      {"name": "typescript-tslint-plugin"},
-      {"name": "@angular/language-service"}
+      {
+        "name": "typescript-tslint-plugin"
+      },
+      {
+        "name": "@angular/language-service"
+      }
     ],
     "paths": {
       "@bepo65/mat-tristate-checkbox": [
         "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
         "dist/bepo65/mat-tristate-checkbox"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

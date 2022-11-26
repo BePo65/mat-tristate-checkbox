@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +12,12 @@ export class AppComponent {
   isCustomer = false;
   isCustomerDisabled = false;
 
-  public form = new UntypedFormGroup({
-    hasTrack: new UntypedFormControl({value: undefined, disabled: false})
+  public form = new FormGroup({
+    hasTrack: new FormControl<boolean>({value: undefined, disabled: false}, {nonNullable: true})
   });
 
-  public form2 = new UntypedFormGroup({
-    isCustomer: new UntypedFormControl({value: false, disabled: false})
+  public form2 = new FormGroup({
+    isCustomer: new FormControl({value: false, disabled: false}, {nonNullable: true})
   });
 
   public resetForm(): void {

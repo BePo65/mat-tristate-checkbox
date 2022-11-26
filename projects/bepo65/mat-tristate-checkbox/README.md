@@ -1,5 +1,5 @@
 # Welcome to @bepo65/mat-tristate-checkbox
-![Version](https://img.shields.io/badge/version-13.0.4-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-13.0.5-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
 
 > &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states.

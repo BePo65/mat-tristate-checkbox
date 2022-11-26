@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v13.0.4...v14.0.0) (2022-11-26)
+
+
+### Features
+
+* update to angular v14 using typed forms in demo ([5b83e64](https://github.com/BePo65/mat-tristate-checkbox/commit/5b83e647e6e4baacf0b22c0d083bdfc6aeb6656c))
+
 ### [13.0.4](https://github.com/BePo65/mat-tristate-checkbox/compare/v13.0.3...v13.0.4) (2022-11-25)
 
 ### [13.0.3](https://github.com/BePo65/mat-tristate-checkbox/compare/v13.0.2...v13.0.3) (2022-09-03)

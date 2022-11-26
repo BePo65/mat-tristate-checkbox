@@ -145,6 +145,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "@bepo65/mat-tristate-checkbox"
+    }
+  }
 }

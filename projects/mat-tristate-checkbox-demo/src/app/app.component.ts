@@ -13,11 +13,11 @@ export class AppComponent {
   isCustomerDisabled = false;
 
   public form = new FormGroup({
-    hasTrack: new FormControl({value: undefined, disabled: false})
+    hasTrack: new FormControl<boolean>({value: undefined, disabled: false}, {nonNullable: true})
   });
 
   public form2 = new FormGroup({
-    isCustomer: new FormControl({value: false, disabled: false})
+    isCustomer: new FormControl({value: false, disabled: false}, {nonNullable: true})
   });
 
   public resetForm(): void {

@@ -6,35 +6,5 @@ updates:
     interval: monthly
   open-pull-requests-limit: 10
   ignore:
-    - dependency-name: "@angular/*"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-devkit/build-angular"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-eslint/builder"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-eslint/eslint-plugin"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-eslint/eslint-plugin-template"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-eslint/schematics"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "@angular-eslint/template-parser"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "rxjs"
-      versions: ["7.x"]
-    - dependency-name: "ng-packagr"
-      versions: ["13.x", "14.x"]
-    - dependency-name: "ajv"
-      versions: ["7.x", "8.x"]
-    - dependency-name: "zone.js"
-      versions: ["0.11.6", "0.11.7", "0.11.8"]
     - dependency-name: "@types/node"
-      versions: ["17.x", "18.x", "19.x"]
-    - dependency-name: "eslint"
-      versions: ["8.x"]
-    - dependency-name: "@typescript-eslint/eslint-plugin"
-      versions: ["5.x"]
-    - dependency-name: "@typescript-eslint/parser"
-      versions: ["5.x"]
-    - dependency-name: "typescript"
-      versions: ["4.4.x", "4.5.x"]
+      versions: ["19.x"]

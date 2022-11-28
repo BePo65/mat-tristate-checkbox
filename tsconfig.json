@@ -11,6 +11,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
       "es2018",
       "dom"
@@ -28,11 +29,11 @@
         "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
         "dist/bepo65/mat-tristate-checkbox"
       ]
-    },
-    "useDefineForClassFields": false
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "strictTemplates": true
   }
 }

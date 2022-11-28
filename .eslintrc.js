@@ -19,7 +19,8 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:json/recommended',
-    'plugin:jasmine/recommended'
+    'plugin:jasmine/recommended',
+    'plugin:cypress/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

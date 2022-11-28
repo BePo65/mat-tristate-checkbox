@@ -48,7 +48,8 @@ module.exports = {
     'import',
     'jsdoc',
     'jasmine',
-    'json'
+    'json',
+    'cypress'
   ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',

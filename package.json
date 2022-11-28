@@ -65,7 +65,7 @@
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "cpy-cli": "^4.2.0",
-    "cypress": "latest",
+    "cypress": "^11.2.0",
     "eslint": "^8.28.0",
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-cypress": "^2.12.1",

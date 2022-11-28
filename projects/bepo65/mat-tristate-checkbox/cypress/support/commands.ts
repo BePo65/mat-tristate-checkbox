@@ -1,5 +1,3 @@
-// HACK import { mount } from 'cypress/angular';
-
 // ***********************************************
 // This example namespace declaration will help
 // with Intellisense and code completion in your
@@ -43,5 +41,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-
-// HACK Cypress.Commands.add('mount', (component, config) => mount(component, config));

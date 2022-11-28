@@ -17,6 +17,7 @@ describe('MatTristateCheckbox', () => {
       }
     );
     cy.get('#demo-checkbox').click();
+    // TODO test fails with @changeSpy not found
     cy.get('@changeSpy').should('have.been.calledWith', 1);
   });
 });

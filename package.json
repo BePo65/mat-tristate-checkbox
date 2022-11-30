@@ -63,7 +63,7 @@
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
-    "@typescript-eslint/parser": "^5.44.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "cpy-cli": "^4.2.0",
     "cypress": "^11.2.0",
     "eslint": "^8.28.0",

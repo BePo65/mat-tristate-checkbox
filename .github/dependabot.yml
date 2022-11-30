@@ -8,3 +8,5 @@ updates:
   ignore:
     - dependency-name: "@types/node"
       versions: ["19.x"]
+    - dependency-name: "typescript"
+      versions: ["4.9.x"]

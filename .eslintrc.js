@@ -12,12 +12,22 @@ module.exports = {
     es6: true,
     jasmine: true
   },
+  plugins: [
+    '@typescript-eslint',
+    'prefer-arrow',
+    'import',
+    'jsdoc',
+    'jasmine',
+    'json',
+    'cypress'
+  ],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
+    'plugin:jsdoc/recommended',
     'plugin:json/recommended',
     'plugin:jasmine/recommended',
     'plugin:cypress/recommended'
@@ -42,14 +52,41 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    '@typescript-eslint',
-    'prefer-arrow',
-    'import',
-    'jsdoc',
-    'jasmine',
-    'json',
-    'cypress'
+  overrides: [
+    {
+      files: ['*.ts'],
+      extends: [
+        'plugin:@angular-eslint/recommended',
+        // This is required if you use inline templates in Components
+        'plugin:@angular-eslint/template/process-inline-templates'
+      ],
+      rules: {
+        /**
+         * Any TypeScript source code (NOT TEMPLATE) related rules you wish to use/reconfigure over and above the
+         * recommended set provided by the @angular-eslint project would go here.
+         */
+        '@angular-eslint/directive-selector': [
+          'error',
+          { type: 'attribute', prefix: 'app', style: 'camelCase' }
+        ],
+        '@angular-eslint/component-selector': [
+          'error',
+          { type: 'element', prefix: 'app', style: 'kebab-case' }
+        ]
+      }
+    },
+    {
+      files: ['*.html'],
+      extends: [
+        'plugin:@angular-eslint/template/recommended'
+      ],
+      rules: {
+        /**
+         * Any template/HTML related rules you wish to use/reconfigure over and above the
+         * recommended set provided by the @angular-eslint project would go here.
+         */
+      }
+    }
   ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -324,6 +361,7 @@ module.exports = {
     'jsdoc/require-param': 'warn',
     'jsdoc/require-param-description': 'warn',
     'jsdoc/require-param-name': 'warn',
+    'jsdoc/require-param-type': 'off',
     'jsdoc/require-returns': 'warn',
     'jsdoc/require-returns-check': 'warn',
     'jsdoc/require-returns-description': 'warn',

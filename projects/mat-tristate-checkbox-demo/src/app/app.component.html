@@ -35,7 +35,7 @@
       </div>
       <div class="result-rows">
         <div class="result-row">
-          <span class="result-label">Tristate variable value in app.component:&nbsp;</span><span>{{formatTristateValue(form.get('hasTrack').value)}}</span>
+          <span class="result-label">Tristate variable value in app.component:&nbsp;</span><span>{{formatTristateValue(form.get('hasTrack')?.value)}}</span>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
       </div>
       <div class="result-rows">
         <div class="result-row">
-          <span class="result-label">Variable value in app.component:&nbsp;</span><span>{{form2.get('isCustomer').value}}</span>
+          <span class="result-label">Variable value in app.component:&nbsp;</span><span>{{form2.get('isCustomer')?.value}}</span>
         </div>
       </div>
     </div>

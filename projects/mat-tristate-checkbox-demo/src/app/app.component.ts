@@ -13,7 +13,7 @@ export class AppComponent {
   isCustomerDisabled = false;
 
   public form = new FormGroup({
-    hasTrack: new FormControl<boolean>({value: undefined, disabled: false}, {nonNullable: true})
+    hasTrack: new FormControl<boolean | undefined>({value: undefined, disabled: false}, {nonNullable: true})
   });
 
   public form2 = new FormGroup({
@@ -28,9 +28,9 @@ export class AppComponent {
 
   public disableHasTrack($event: any): void {
     if ($event.checked) {
-      this.form.get('hasTrack').disable();
+      this.form.get('hasTrack')?.disable();
     } else {
-      this.form.get('hasTrack').enable();
+      this.form.get('hasTrack')?.enable();
     }
   }
 
@@ -42,9 +42,9 @@ export class AppComponent {
 
   public disableIsCustomer($event: any): void {
     if ($event.checked) {
-      this.form2.get('isCustomer').disable();
+      this.form2.get('isCustomer')?.disable();
     } else {
-      this.form2.get('isCustomer').enable();
+      this.form2.get('isCustomer')?.enable();
     }
   }
 

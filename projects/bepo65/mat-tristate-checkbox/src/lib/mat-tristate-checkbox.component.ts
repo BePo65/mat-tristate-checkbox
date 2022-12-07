@@ -19,7 +19,7 @@ import { MatCheckboxDefaultOptions, MAT_CHECKBOX_DEFAULT_OPTIONS } from '@angula
 })
 export class MatTristateCheckboxComponent implements ControlValueAccessor {
   @Input() public color = 'accent';
-  @Input() public disabled: boolean;
+  @Input() public disabled = false;
   @Input() labelPosition: 'before' | 'after' = 'after';
 
   public value?: boolean;
@@ -47,7 +47,8 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
       console.log('writeValue mit null');
     } else {
       if (!this.chkStates.includes(value)) {
-        throw new Error(`Value '${value?.toString()}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
+        // eslint-disable-next-line max-len
+        throw new Error(`Value '${value?.toString() || 'undefined'}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
       }
     }
     this.value = value;

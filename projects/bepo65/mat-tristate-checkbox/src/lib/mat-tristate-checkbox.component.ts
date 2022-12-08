@@ -11,7 +11,7 @@ import { MatCheckboxDefaultOptions, MAT_CHECKBOX_DEFAULT_OPTIONS } from '@angula
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),  // eslint-disable-line no-use-before-define
+      useExisting: forwardRef(() =>  MatTristateCheckboxComponent),
       multi: true
     },
     { provide: MAT_CHECKBOX_DEFAULT_OPTIONS, useValue: { clickAction: 'noop' } as MatCheckboxDefaultOptions }
@@ -25,20 +25,21 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   public value?: boolean;
 
   private chkStates: (boolean | undefined)[] = [undefined, false, true];
-  private onChange: any;
-  private onTouched: any;
+  private onChange?:  (value?: boolean) => void;
+  private onTouched?: () => void;
 
-  registerOnChange(fn: any): void {
+  registerOnChange(fn: (value?: boolean) => void): void {
     this.onChange = fn;
   }
 
-  registerOnTouched(fn: any): void {
+  registerOnTouched(fn: () => void): void {
     this.onTouched = fn;
   }
 
   /**
    * Set value of this checkbox to given value.
    * (Only) on first run with FormControl value is null.
+   *
    * @param value - new value for this checkbox
    */
   writeValue(value?: boolean): void {
@@ -47,7 +48,6 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
       console.log('writeValue mit null');
     } else {
       if (!this.chkStates.includes(value)) {
-        // eslint-disable-next-line max-len
         throw new Error(`Value '${value?.toString() || 'undefined'}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);
       }
     }
@@ -60,8 +60,8 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   next(): void {
     if (!this.disabled) {
       this.value = this.chkStates[(this.chkStates.indexOf(this.value) + 1) % this.chkStates.length];
-      this.onChange(this.value);
-      this.onTouched();
+      this.onChange?.(this.value);
+      this.onTouched?.();
     }
   }
 

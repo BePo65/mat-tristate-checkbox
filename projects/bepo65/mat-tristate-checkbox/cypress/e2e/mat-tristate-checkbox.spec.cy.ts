@@ -12,7 +12,7 @@ describe('MatTristateCheckbox', () => {
       '<mat-tristate-checkbox id="demo-checkbox" [color]="\'primary\'" [labelPosition]="\'before\'">is holiday?</mat-tristate-checkbox>',
       {
         componentProperties: {
-          change: createOutputSpy('changeSpy')
+          change: createOutputSpy('changeSpy') as (value?: boolean) => void
         }
       }
     );

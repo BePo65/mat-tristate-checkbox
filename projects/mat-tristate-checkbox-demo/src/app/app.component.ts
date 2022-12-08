@@ -1,5 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,7 @@ export class AppComponent {
     });
   }
 
-  public disableHasTrack($event: any): void {
+  public disableHasTrack($event: MatCheckboxChange): void {
     if ($event.checked) {
       this.form.get('hasTrack')?.disable();
     } else {
@@ -40,7 +42,7 @@ export class AppComponent {
     });
   }
 
-  public disableIsCustomer($event: any): void {
+  public disableIsCustomer($event:  MatCheckboxChange): void {
     if ($event.checked) {
       this.form2.get('isCustomer')?.disable();
     } else {
@@ -48,7 +50,7 @@ export class AppComponent {
     }
   }
 
-  public formatTristateValue(value: any): string {
-    return (value === undefined) || (value === null) ? '---' : value;
+  public formatTristateValue(value: boolean | undefined | null): string {
+    return (value === undefined) || (value === null) ? '---' : value.toString();
   }
 }

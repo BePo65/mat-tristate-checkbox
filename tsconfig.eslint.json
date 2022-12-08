@@ -4,11 +4,11 @@
     "**/*.ts",
     "**/*.js",
     "**/*.json",
-    ".eslintrc.js"
+    "**/.*.json",
+    "**/environment?(.prod).ts",
+    "node_modules/cypress"
   ],
   "exclude": [
-  ],
-  "compilerOptions": {
-    "types": ["cypress"]
-  }
+    "node_modules/cypress"
+  ]
 }

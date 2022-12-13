@@ -150,6 +150,15 @@
               "devServerTarget": "mat-tristate-checkbox-demo:serve:development"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/mat-tristate-checkbox-demo/**/*.ts",
+              "projects/mat-tristate-checkbox-demo/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -224,6 +233,15 @@
             "production": {
               "devServerTarget": "@bepo65/mat-tristate-checkbox:serve:production"
             }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/bepo65/mat-tristate-checkbox/**/*.ts",
+              "projects/bepo65/mat-tristate-checkbox/**/*.html"
+            ]
           }
         }
       }

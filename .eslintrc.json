@@ -105,7 +105,7 @@
             "classPropertiesAllowed": false
           }
         ],
-        "semi": [2, "always"]
+        "semi": ["error", "always"]
       }
     },
     {

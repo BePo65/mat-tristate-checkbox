@@ -14,7 +14,8 @@
   "homepage": "https://github.com/BePo65/mat-tristate-checkbox",
   "scripts": {
     "ng": "ng",
-    "lint": "eslint --report-unused-disable-directives .eslintrc.json \"./projects/**/{src,e2e}/**/*.{ts,js,json}\"",
+    "lint": "ng lint",
+    "lint:cli": "eslint --report-unused-disable-directives .eslintrc.json \"./projects/**/{src,e2e}/**/*.{ts,js,json}\"",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
     "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",

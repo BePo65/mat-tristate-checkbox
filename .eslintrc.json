@@ -21,6 +21,10 @@
       "files": [
         "*.ts"
       ],
+      "excludedFiles":[
+        "projects/bepo65/mat-tristate-checkbox/cypress/**/*.ts",
+        "projects/mat-tristate-checkbox-demo/cypress/**/*.ts"
+      ],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",

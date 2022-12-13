@@ -1,11 +1,52 @@
 {
-  "extends": "./tsconfig.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      },
+      {
+        "name": "@angular/language-service"
+      }
+    ],
+    "paths": {
+      "@bepo65/mat-tristate-checkbox": [
+        "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
+        "dist/bepo65/mat-tristate-checkbox"
+      ]
+    },
+    "types": ["jasmine"]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
   "include": [
-    "**/*.ts",
-    "**/*.js",
-    "**/*.json",
-    "**/.*.json",
-    "**/environment?(.prod).ts",
+    "projects/mat-tristate-checkbox-demo/src",
+    "projects/bepo65/mat-tristate-checkbox/src",
     "node_modules/cypress"
   ],
   "exclude": [

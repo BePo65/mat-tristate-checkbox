@@ -26,11 +26,11 @@ export default defineConfig({
           root: '',
           sourceRoot: 'projects/mat-tristate-checkbox-demo',
           buildOptions: {
-            tsConfig: 'tsconfig.app.json'
+            tsConfig: 'cypress/tsconfig.json'
           }
         }
       }
     },
-    specPattern: '**/*.cy.ts'
+    specPattern: '**/ct/*.cy.ts'
   }
 });

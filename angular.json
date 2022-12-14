@@ -20,7 +20,9 @@
             "outputPath": "dist/mat-tristate-checkbox-demo",
             "index": "projects/mat-tristate-checkbox-demo/src/index.html",
             "main": "projects/mat-tristate-checkbox-demo/src/main.ts",
-            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.app.json",
             "assets": [
               "projects/mat-tristate-checkbox-demo/src/favicon.ico",
@@ -30,13 +32,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/mat-tristate-checkbox-demo/src/styles.scss"
             ],
-            "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -89,8 +85,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mat-tristate-checkbox-demo/src/test.ts",
-            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.spec.json",
             "karmaConfig": "projects/mat-tristate-checkbox-demo/karma.conf.js",
             "assets": [
@@ -137,7 +135,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/bepo65/mat-tristate-checkbox/src/test.ts",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.spec.json",
             "karmaConfig": "projects/bepo65/mat-tristate-checkbox/karma.conf.js"
           }

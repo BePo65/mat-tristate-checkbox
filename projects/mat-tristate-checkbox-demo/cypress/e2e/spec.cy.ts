@@ -1,6 +1,6 @@
 describe('My First Test', () => {
-  it('Visits the initial project page', () => {
+  it('Visits the project demo page', () => {
     cy.visit('/');
-    cy.contains('app is running!');
+    cy.contains('3-State-Checkbox with NgModel');
   });
 });

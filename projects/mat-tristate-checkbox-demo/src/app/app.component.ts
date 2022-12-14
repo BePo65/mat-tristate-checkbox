@@ -1,4 +1,4 @@
-/* eslint-disable @angular-eslint/component-selector */
+
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatCheckboxChange } from '@angular/material/checkbox';

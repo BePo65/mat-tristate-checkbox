@@ -1,3 +1,5 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+/* "types": ["jasmine"] is required for VSCode type checking */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,28 +21,28 @@
     "target": "ES2022",
     "useDefineForClassFields": false,
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
-    ],
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin"
-      },
-      {
-        "name": "@angular/language-service"
-      }
     ],
     "paths": {
       "@bepo65/mat-tristate-checkbox": [
         "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
         "dist/bepo65/mat-tristate-checkbox"
       ]
-    }
+    },
+    "types": ["jasmine"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "**/src/**/*.ts",
+    "node_modules/cypress"
+  ],
+  "exclude": [
+    "node_modules/cypress"
+  ]
 }

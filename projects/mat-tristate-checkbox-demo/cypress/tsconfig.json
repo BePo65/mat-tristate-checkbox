@@ -6,10 +6,10 @@
     "sourceMap": false,
     "types": []
   },
+  "files": [],
   "include": [
     "**/*.ts",
     "../cypress.config.ts"
   ],
-  "exclude": [
-  ]
+  "exclude": []
 }

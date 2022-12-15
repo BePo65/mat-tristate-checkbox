@@ -1,9 +1,14 @@
 {
   "extends": "../tsconfig.lib.json",
-  "include": ["**/*.ts"],
   "compilerOptions": {
-    "sourceMap": false,
     "inlineSources": false,
-    "types": ["cypress"]
-  }
+    "sourceMap": false,
+    "types": []
+  },
+  "include": [
+    "**/*.ts",
+    "../cypress.config.ts"
+  ],
+  "exclude": [
+  ]
 }

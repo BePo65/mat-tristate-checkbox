@@ -1,6 +1,6 @@
 // tslint:disable
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-undef */
+ 
+ 
 
 // readme-updater.js
 // standard-version updater for readme files with iconified semantic version string.

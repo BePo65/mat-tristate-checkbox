@@ -1,0 +1,112 @@
+{
+  "extends": "../../../.eslintrc.json",
+  "ignorePatterns": [
+    "!**/*",
+    "**/.angular/**"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "excludedFiles": "cypress.config.ts",
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "lib",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "lib",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.spec.ts"
+      ]
+    },
+    {
+      "files": [
+        "cypress.config.ts"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "projects/bepo65/mat-tristate-checkbox/cypress/tsconfig.json",
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      },
+      "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts"]
+        },
+        "import/resolver": {
+          "node": true,
+          "typescript": {
+            "project": [
+              "projects/bepo65/mat-tristate-checkbox/cypress/tsconfig.json"
+            ]
+          }
+        }
+      },
+      "rules": {
+        "@typescript-eslint/quotes": [
+          "error",
+          "single"
+        ],
+        "@typescript-eslint/unbound-method": [
+          "error",
+          {
+            "ignoreStatic": true
+          }
+        ],
+        "comma-dangle": "error",
+        "jsdoc/require-param-type": "off",
+        "jsdoc/require-returns-type": [
+          "off",
+          {
+            "contexts": [
+              "any"
+            ]
+          }
+        ],
+        "no-trailing-spaces": "warn",
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 1,
+            "maxEOF": 1
+          }
+        ],
+        "prefer-arrow/prefer-arrow-functions": [
+          "warn",
+          {
+            "disallowPrototype": true,
+            "singleReturnOnly": false,
+            "classPropertiesAllowed": false
+          }
+        ],
+        "semi": ["error", "always"]
+      }
+    },
+    {
+      "files": [
+        "*.json"
+      ]
+    },
+    {
+      "files": [
+        "*.html"
+      ]
+    }
+  ]
+}

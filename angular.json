@@ -20,7 +20,9 @@
             "outputPath": "dist/mat-tristate-checkbox-demo",
             "index": "projects/mat-tristate-checkbox-demo/src/index.html",
             "main": "projects/mat-tristate-checkbox-demo/src/main.ts",
-            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.app.json",
             "assets": [
               "projects/mat-tristate-checkbox-demo/src/favicon.ico",
@@ -30,13 +32,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/mat-tristate-checkbox-demo/src/styles.scss"
             ],
-            "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -89,8 +85,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mat-tristate-checkbox-demo/src/test.ts",
-            "polyfills": "projects/mat-tristate-checkbox-demo/src/polyfills.ts",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.spec.json",
             "karmaConfig": "projects/mat-tristate-checkbox-demo/karma.conf.js",
             "assets": [
@@ -104,51 +102,14 @@
             "scripts": []
           }
         },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "devServerTarget": "mat-tristate-checkbox-demo:serve",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "mat-tristate-checkbox-demo:serve:production"
-            }
-          }
-        },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "mat-tristate-checkbox-demo:serve",
-            "configFile": "projects/mat-tristate-checkbox-demo/cypress.config.js"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "mat-tristate-checkbox-demo:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false,
-            "configFile": "projects/mat-tristate-checkbox-demo/cypress.config.js"
-          }
-        },
-        "ct": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "mat-tristate-checkbox-demo:serve",
-            "watch": true,
-            "headless": false,
-            "testingType": "component"
-          },
-          "configurations": {
-            "development": {
-              "devServerTarget": "mat-tristate-checkbox-demo:serve:development"
-            }
+            "lintFilePatterns": [
+              "projects/mat-tristate-checkbox-demo/**/*.ts",
+              "projects/mat-tristate-checkbox-demo/**/*.json",
+              "projects/mat-tristate-checkbox-demo/**/*.html"
+            ]
           }
         }
       }
@@ -174,56 +135,22 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/bepo65/mat-tristate-checkbox/src/test.ts",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.spec.json",
             "karmaConfig": "projects/bepo65/mat-tristate-checkbox/karma.conf.js"
           }
         },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "devServerTarget": "@bepo65/mat-tristate-checkbox:serve",
-            "configFile": "projects/bepo65/mat-tristate-checkbox/cypress.config.js"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "@bepo65/mat-tristate-checkbox:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false,
-            "configFile": "projects/bepo65/mat-tristate-checkbox/cypress.config.js"
-          }
-        },
-        "ct": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "@bepo65/mat-tristate-checkbox:serve",
-            "watch": true,
-            "headless": false,
-            "testingType": "component"
-          },
-          "configurations": {
-            "development": {
-              "devServerTarget": "@bepo65/mat-tristate-checkbox:serve:development"
-            }
-          }
-        },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "@bepo65/mat-tristate-checkbox:serve",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "@bepo65/mat-tristate-checkbox:serve:production"
-            }
+            "lintFilePatterns": [
+              "projects/bepo65/mat-tristate-checkbox/**/*.ts",
+              "projects/bepo65/mat-tristate-checkbox/**/*.json",
+              "projects/bepo65/mat-tristate-checkbox/**/*.html"
+            ]
           }
         }
       }

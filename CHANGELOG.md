@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v14.0.0...v15.0.0) (2023-01-09)
+
+
+### Features
+
+* update to Angular V15 ([047adde](https://github.com/BePo65/mat-tristate-checkbox/commit/047adde434481040231c076cd54a286f3efed0cd))
+
+
+### Bug Fixes
+
+* change browserlist to browsers with support for es6 modules ([9ec1ba3](https://github.com/BePo65/mat-tristate-checkbox/commit/9ec1ba3367d4af4622c3df669d539f4ed504042d))
+* change from legacy controls back to material default controls ([d2f5552](https://github.com/BePo65/mat-tristate-checkbox/commit/d2f555242fb83639229f55b949cbf15ec33129f7))
+* fix eslint warnings ([642dd4e](https://github.com/BePo65/mat-tristate-checkbox/commit/642dd4efa0bc4c0c28b095b8bba62c82ab7472c0))
+
 ## [14.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v13.0.4...v14.0.0) (2022-11-26)
 
 

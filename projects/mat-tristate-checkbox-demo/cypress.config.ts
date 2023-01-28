@@ -4,8 +4,8 @@
  * webpack preprocessor cypress expects a file named tsconfig.json
  */
 
-import { defineConfig } from 'cypress';
 import * as webpackPreprocessor from '@cypress/webpack-preprocessor';
+import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {

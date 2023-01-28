@@ -61,6 +61,48 @@
           }
         ],
         "comma-dangle": "error",
+        "import/order": [
+          "error", {
+            "groups": [
+              ["builtin", "external"],
+              "parent",
+              "sibling",
+              "internal"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "@lib/**",
+                "group": "parent",
+                "position": "before"
+              },
+              {
+                "pattern": "@env/**",
+                "group": "parent",
+                "position": "after"
+              },
+              {
+                "pattern": "@config/**",
+                "group": "sibling",
+                "position": "before"
+              },
+              {
+                "pattern": "@shared/**",
+                "group": "sibling",
+                "position": "after"
+              },
+              {
+                "pattern": "@app/**",
+                "group": "internal",
+                "position": "before"
+              }
+            ],
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            },
+            "newlines-between": "always"
+          }
+        ],
         "jsdoc/require-param-type": "off",
         "jsdoc/require-returns-type": [
           "off",

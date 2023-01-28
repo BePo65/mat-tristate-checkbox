@@ -10,3 +10,5 @@ updates:
       versions: ["19.x"]
     - dependency-name: "typescript"
       versions: ["4.9.x"]
+    - dependency-name: "tslib"
+      versions: ["2.5.x"]

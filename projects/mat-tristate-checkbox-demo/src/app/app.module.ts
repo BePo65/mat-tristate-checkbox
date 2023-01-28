@@ -7,9 +7,9 @@ import { MatRippleModule } from '@angular/material/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
-
 import { AppComponent } from './app.component';
+
+import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
 
 @NgModule({
   declarations: [

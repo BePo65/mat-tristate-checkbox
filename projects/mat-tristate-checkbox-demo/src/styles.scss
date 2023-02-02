@@ -1,3 +1,9 @@
+// Fonts for material
+@use "roboto-fontface/css/roboto/sass/roboto-fontface" with (
+  $roboto-font-path: "~roboto-fontface/fonts"
+);
+@use "material-icons/iconfont/material-icons";
+
 @import url("~@angular/material/prebuilt-themes/indigo-pink.css");
 
 html,

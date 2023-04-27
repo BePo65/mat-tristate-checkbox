@@ -39,7 +39,6 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   /**
    * Set value of this checkbox to given value.
    * (Only) on first run with FormControl value is null.
-   *
    * @param value - new value for this checkbox
    */
   writeValue(value?: boolean): void {

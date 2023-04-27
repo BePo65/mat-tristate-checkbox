@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.1.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.0.0...v15.1.0) (2023-04-27)
+
+
+### Features
+
+* make google fonts local to app ([7a9fdb2](https://github.com/BePo65/mat-tristate-checkbox/commit/7a9fdb26618b206173b6d14e9bfc5806b7b0c18f))
+
 ## [15.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v14.0.0...v15.0.0) (2023-01-09)
 
 

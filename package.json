@@ -93,7 +93,7 @@
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.1.0",
     "material-icons": "^1.13.8",
-    "ng-packagr": "^15.2.2",
+    "ng-packagr": "^16.1.0",
     "standard-version": "^9.5.0",
     "start-server-and-test": "^2.0.0",
     "stylelint": "^15.9.0",

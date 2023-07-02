@@ -12,6 +12,8 @@ updates:
       versions: ["16.x"]
     - dependency-name: "@angular-eslint/*"
       versions: ["16.x"]
+    - dependency-name: "ng-packagr"
+      versions: ["16.x"]
     - dependency-name: "@types/node"
       versions: ["19.x", "20.x"]
     - dependency-name: "jasmine-core"

@@ -14,9 +14,9 @@ updates:
       versions: ["16.x"]
     - dependency-name: "ng-packagr"
       versions: ["16.x"]
-    - dependency-name: "@types/node"
-      versions: ["19.x", "20.x"]
     - dependency-name: "jasmine-core"
       versions: ["5.x"]
     - dependency-name: "typescript"
       versions: ["4.9.x"]
+    - dependency-name: "zone"
+      versions: ["0.14.x"]

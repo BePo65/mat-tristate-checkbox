@@ -68,7 +68,7 @@
     "@angular/compiler-cli": "^15.2.9",
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-angular": "^17.7.0",
-    "@cypress/schematic": "^2.5.0",
+    "@cypress/schematic": "^2.5.1",
     "@cypress/webpack-preprocessor": "^6.0.0",
     "@types/jasmine": "^4.3.6",
     "@types/node": "^20.8.0",

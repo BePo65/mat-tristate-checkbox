@@ -1,9 +1,8 @@
 .flex-container {
-  align-content: stretch;
   align-items: stretch;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  place-content: stretch flex-start;
 }
 
 .flex-item {

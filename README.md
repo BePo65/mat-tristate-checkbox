@@ -42,7 +42,7 @@ And in template file app.component.html:
 
 ## Demo project
 
-There is a demo project on  [stackblitz](https://stackblitz.com/edit/angular-mat-tristate-cb-demo) that shows a simple use case.
+Try out the [demo page](https://bepo65.github.io/mat-tristate-checkbox/)
 
 ## Properties of checkbox
 

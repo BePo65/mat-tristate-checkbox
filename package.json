@@ -21,7 +21,7 @@
     "lint:cli": "eslint --report-unused-disable-directives .eslintrc.json \"./projects/**/{src,e2e}/**/*.{ts,js,json}\"",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
-    "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
+    "test": "npm run test:lib -- --watch=false --browsers=ChromeHeadless && npm run test:demo -- --watch=false --browsers=ChromeHeadless",
     "test:lib": "ng test @bepo65/mat-tristate-checkbox",
     "test:lib:coverage": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test @bepo65/mat-tristate-checkbox --code-coverage --watch=false",
     "test:lib:coverage:ui": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test @bepo65/mat-tristate-checkbox --code-coverage --watch=false && node tools/open-coverage.mjs",

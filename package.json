@@ -30,7 +30,7 @@
     "build:lib": "ng build @bepo65/mat-tristate-checkbox",
     "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --configuration production && cpy CHANGELOG.md dist/bepo65/mat-tristate-checkbox/",
     "build:demo": "ng build mat-tristate-checkbox-demo",
-    "build:ghpages": "del-cli ghpages && cpy \"dist/mat-image-overlay-demo/**\" ghpages",
+    "build:ghpages": "del-cli ghpages && cpy \"dist/mat-tristate-checkbox-demo/**\" ghpages",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
     "release": "standard-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open",

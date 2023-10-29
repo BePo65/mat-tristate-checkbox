@@ -19,7 +19,7 @@
     "lint:lib": "eslint --report-unused-disable-directives \"projects/bepo65/mat-tristate-checkbox\"",
     "lint:demo": "eslint --report-unused-disable-directives \"projects/mat-tristate-checkbox-demo\"",
     "lint:cli": "eslint --report-unused-disable-directives .eslintrc.json \"./projects/**/{src,e2e}/**/*.{ts,js,json}\"",
-    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss": "stylelint \"**/*.scss\"",
     "lint:commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
     "test": "npm run test:lib -- --watch=false && npm run test:demo -- --watch=false",
     "test:lib": "ng test @bepo65/mat-tristate-checkbox",

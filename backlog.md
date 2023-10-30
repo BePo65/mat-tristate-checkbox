@@ -1,1 +1,1 @@
-* copy changelog to dist folders on build
+* no open points

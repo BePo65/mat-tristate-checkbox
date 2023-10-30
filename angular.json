@@ -26,7 +26,22 @@
             "tsConfig": "projects/mat-tristate-checkbox-demo/tsconfig.app.json",
             "assets": [
               "projects/mat-tristate-checkbox-demo/src/favicon.ico",
-              "projects/mat-tristate-checkbox-demo/src/assets"
+              "projects/mat-tristate-checkbox-demo/src/assets",
+              {
+                "glob": "screenshot.jpg",
+                "input": "assets",
+                "output": "assets"
+              },
+              {
+                "glob": "README.md",
+                "input": ".",
+                "output": "."
+              },
+              {
+                "glob": "LICENSE",
+                "input": ".",
+                "output": "."
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",

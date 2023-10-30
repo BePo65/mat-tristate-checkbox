@@ -42,7 +42,9 @@ And in template file app.component.html:
 
 ## Demo project
 
-Try out the [demo page](https://bepo65.github.io/mat-tristate-checkbox/)
+Try out the [demo page](https://bepo65.github.io/mat-tristate-checkbox/).
+
+![Screenshot](assets/screenshot.jpg "Screenshot of the demo page")
 
 ## Properties of checkbox
 

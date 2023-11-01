@@ -71,7 +71,7 @@
     "@commitlint/config-angular": "^18.1.0",
     "@cypress/schematic": "^2.5.1",
     "@cypress/webpack-preprocessor": "^6.0.0",
-    "@types/jasmine": "^4.3.6",
+    "@types/jasmine": "^5.1.1",
     "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",

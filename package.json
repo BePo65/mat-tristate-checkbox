@@ -73,7 +73,7 @@
     "@cypress/webpack-preprocessor": "^6.0.0",
     "@types/jasmine": "^4.3.6",
     "@types/node": "^20.8.9",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.0",
     "cpy-cli": "^5.0.0",
     "cypress": "^13.3.3",

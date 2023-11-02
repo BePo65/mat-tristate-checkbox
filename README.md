@@ -76,35 +76,46 @@ npm run test
 ## Changelog
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
-## Contributing
-The [CHANGELOG.md](CHANGELOG.md) is generated with `standard-changelog` (`npm run release`).
-The following is the list of supported scopes:
-* checkbox
-* demo
-* none/empty string: useful for test and refactor changes that are done across all packages (e.g. test: add missing unit tests) and for docs changes that are not related to a specific package (e.g. docs: fix typo in tutorial).
-
 ## Release hints
-Required versions (e.g. caused by version dependencies):
-| Package | Version | Remark |
-|-----|------------------|---|
-| @angular-eslint/* | 13.x.y | requires angular V13 |
-| @angular-eslint/* | 13.x.y | requires eslint V8 |
-| @typescript-eslint/* | 5.x.y | requires eslint V8 |
+Starting with version 16 the generated package on npm is unscoped (i.e. does not have / require the bepo65 scope).
 
-Updating to Angular V13 is still under construction.
+## Contributing
 
-## Hacks
-+ `ejs` was installed to solve a dependency of '@angular-eslint/builder' found by github dependabot. Can be deleted from package.json, when '@angular-eslint/builder' is updated.
+## Changelog
+The project uses 'standard-version' to create the changelog. To enable this system, commit messages are linted before commits are executed by git.
 
-## Author
+**The structure of commit messages is**:
+```
+  <header>
+  <BLANK LINE>
+  <body>
+  <BLANK LINE>
+  <footer>
+```
 
-**Bernhard Pottler**
+**header**
+```
+  <type>(<scope>): <short summary>
+```
+  
+type and scope
+  - build: Changes that affect the build system or external dependencies (example scope: npm)
+  - docs: Documentation only changes
+  - feat: A new feature
+  - fix: A bug fix
+  - perf: A code change that improves performance
+  - refactor: A code change that neither fixes a bug nor adds a feature
+  - test: Adding missing tests or correcting existing tests (example scopes: demo, lib, e2e)
 
-  on Github: [@BePo65](https://github.com/BePo65)
+**footer**
+```
+  BREAKING CHANGE: ... (requires MAJOR in Semantic Versioning)
+```
 
+For details of the commit messages format see [Contributing to Angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
 
 ## License
 
-Copyright © 2020 [Bernhard Pottler](https://github.com/BePo65).
+Copyright © 2023 [Bernhard Pottler](https://github.com/BePo65).
 
 This project and all of its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE) license.

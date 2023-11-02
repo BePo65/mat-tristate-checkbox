@@ -1,5 +1,5 @@
 {
-  "name": "bepo65-mat-tristate-checkbox",
+  "name": "mat-tristate-checkbox",
   "version": "15.1.4",
   "description": "3-state checkbox for Angular with Material as library component with demo project",
   "repository": {
@@ -16,20 +16,20 @@
     "ng": "ng",
     "lint": "npm run lint:root && npm run lint:lib && npm run lint:demo && npm run lint:scss",
     "lint:root": "eslint --report-unused-disable-directives --config=./.eslintrc.root.json .",
-    "lint:lib": "eslint --report-unused-disable-directives \"projects/bepo65/mat-tristate-checkbox\"",
+    "lint:lib": "eslint --report-unused-disable-directives \"projects/mat-tristate-checkbox\"",
     "lint:demo": "eslint --report-unused-disable-directives \"projects/mat-tristate-checkbox-demo\"",
     "lint:cli": "eslint --report-unused-disable-directives .eslintrc.json \"./projects/**/{src,e2e}/**/*.{ts,js,json}\"",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:commits": "commitlint --from 6c5f03e84b9b0 --to HEAD --verbose",
     "test": "npm run test:lib -- --watch=false --browsers=ChromeHeadless && npm run test:demo -- --watch=false --browsers=ChromeHeadless",
-    "test:lib": "ng test @bepo65/mat-tristate-checkbox",
-    "test:lib:coverage": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test @bepo65/mat-tristate-checkbox --code-coverage --watch=false",
-    "test:lib:coverage:ui": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test @bepo65/mat-tristate-checkbox --code-coverage --watch=false && node tools/open-coverage.mjs",
+    "test:lib": "ng test mat-tristate-checkbox",
+    "test:lib:coverage": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test mat-tristate-checkbox --code-coverage --watch=false",
+    "test:lib:coverage:ui": "set BROWSERSLIST_IGNORE_OLD_DATA=1 && ng test mat-tristate-checkbox --code-coverage --watch=false && node tools/open-coverage.mjs",
     "test:demo": "ng test mat-tristate-checkbox-demo",
     "build": "npm run build:lib && npm run build:demo:prod",
     "build:prod": "npm run build:lib:prod && npm run build:demo:prod",
-    "build:lib": "ng build @bepo65/mat-tristate-checkbox",
-    "build:lib:prod": "ng build @bepo65/mat-tristate-checkbox --configuration production && cpy CHANGELOG.md dist/bepo65/mat-tristate-checkbox/",
+    "build:lib": "ng build mat-tristate-checkbox",
+    "build:lib:prod": "ng build mat-tristate-checkbox --configuration production && cpy CHANGELOG.md dist/bepo65/mat-tristate-checkbox/",
     "build:demo:prod": "ng build mat-tristate-checkbox-demo --delete-output-path --configuration production && cpy CHANGELOG.md dist/mat-tristate-checkbox-demo/",
     "build:ghpages": "npm run build:lib:prod && npm run build:demo:prod && del-cli ghpages && cpy \"dist/mat-tristate-checkbox-demo/**\" ghpages",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
@@ -40,8 +40,8 @@
     "cypress:demo:open": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress open --project=projects/mat-tristate-checkbox-demo\"",
     "cypress:demo:run:e2e": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress run --project=projects/mat-tristate-checkbox-demo\"",
     "cypress:demo:run:ct": "cypress run --project=projects/mat-tristate-checkbox-demo --component",
-    "cypress:lib:open": "cypress open --project=projects/bepo65/mat-tristate-checkbox",
-    "cypress:lib:run:ct": "cypress run --project=projects/bepo65/mat-tristate-checkbox --component"
+    "cypress:lib:open": "cypress open --project=projects/mat-tristate-checkbox",
+    "cypress:lib:run:ct": "cypress run --project=projects/mat-tristate-checkbox --component"
   },
   "private": false,
   "dependencies": {
@@ -119,7 +119,7 @@
         "type": "json"
       },
       {
-        "filename": "projects/bepo65/mat-tristate-checkbox/package.json",
+        "filename": "projects/mat-tristate-checkbox/package.json",
         "type": "json"
       },
       {
@@ -127,7 +127,7 @@
         "updater": "tools/npm-scripts/readme-updater.js"
       },
       {
-        "filename": "projects/bepo65/mat-tristate-checkbox/README.md",
+        "filename": "projects/mat-tristate-checkbox/README.md",
         "updater": "tools/npm-scripts/readme-updater.js"
       }
     ]

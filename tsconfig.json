@@ -25,9 +25,9 @@
       "dom"
     ],
     "paths": {
-      "@bepo65/mat-tristate-checkbox": [
-        "dist/bepo65/mat-tristate-checkbox/bepo65-mat-tristate-checkbox",
-        "dist/bepo65/mat-tristate-checkbox"
+      "mat-tristate-checkbox": [
+        "dist/mat-tristate-checkbox/mat-tristate-checkbox",
+        "dist/mat-tristate-checkbox"
       ]
     },
     "types": ["jasmine"]

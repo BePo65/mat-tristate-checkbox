@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
-import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
+import { MatTristateCheckboxModule } from 'mat-tristate-checkbox';
 
 @NgModule({
   declarations: [

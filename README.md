@@ -1,4 +1,4 @@
-# @bepo65/mat-tristate-checkbox
+# mat-tristate-checkbox
 ![Version](https://img.shields.io/badge/version-15.1.4-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/bepo65/mat-tristate-checkbox/@angular/material?color=red&label=Angular-Material&logo=angular&logoColor=red)
@@ -7,19 +7,19 @@
 
 ## Prerequisites
 
-The package can be used in Angular apps with Angular Material installed. This Version requires Angular 15.
+The package can be used in Angular apps with Angular Material installed. This Version requires Angular 16.
 
 ## Installation of checkbox
 
 ```sh
-npm install @bepo65/mat-tristate-checkbox
+npm install mat-tristate-checkbox
 ```
 
 ## Sample usage of checkbox
 
 Now you can use the mat-tristate-checkbox component in your app components, for example in app.component.ts:
 ```javascript
-import { MatTristateCheckboxModule } from '@bepo65/mat-tristate-checkbox';
+import { MatTristateCheckboxModule } from 'mat-tristate-checkbox';
 ...
 @NgModule({
   declarations: [
@@ -118,4 +118,4 @@ For details of the commit messages format see [Contributing to Angular](https://
 
 Copyright © 2023 [Bernhard Pottler](https://github.com/BePo65).
 
-This project and all of its packages are released under [MIT](https://github.com/BePo65/bepo65-mat-tristate-checkbox/blob/master/LICENSE) license.
+This project and all of its packages are released under [MIT](https://github.com/BePo65/mat-tristate-checkbox/blob/master/LICENSE) license.

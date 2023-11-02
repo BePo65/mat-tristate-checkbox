@@ -1,5 +1,5 @@
 {
-  "extends": "../../../.eslintrc.json",
+  "extends": "../../.eslintrc.json",
   "ignorePatterns": [
     "!**/*",
     "**/.angular/**"
@@ -40,7 +40,7 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": "projects/bepo65/mat-tristate-checkbox/cypress/tsconfig.json",
+        "project": "projects/mat-tristate-checkbox/cypress/tsconfig.json",
         "ecmaVersion": 2021,
         "sourceType": "module"
       },
@@ -54,7 +54,7 @@
           "node": true,
           "typescript": {
             "project": [
-              "projects/bepo65/mat-tristate-checkbox/cypress/tsconfig.json"
+              "projects/mat-tristate-checkbox/cypress/tsconfig.json"
             ]
           }
         }

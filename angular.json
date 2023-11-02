@@ -129,21 +129,21 @@
         }
       }
     },
-    "@bepo65/mat-tristate-checkbox": {
+    "mat-tristate-checkbox": {
       "projectType": "library",
-      "root": "projects/bepo65/mat-tristate-checkbox",
-      "sourceRoot": "projects/bepo65/mat-tristate-checkbox/src",
+      "root": "projects/mat-tristate-checkbox",
+      "sourceRoot": "projects/mat-tristate-checkbox/src",
       "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.lib.json",
-            "project": "projects/bepo65/mat-tristate-checkbox/ng-package.json"
+            "tsConfig": "projects/mat-tristate-checkbox/tsconfig.lib.json",
+            "project": "projects/mat-tristate-checkbox/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.lib.prod.json"
+              "tsConfig": "projects/mat-tristate-checkbox/tsconfig.lib.prod.json"
             }
           }
         },
@@ -154,17 +154,17 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/bepo65/mat-tristate-checkbox/tsconfig.spec.json",
-            "karmaConfig": "projects/bepo65/mat-tristate-checkbox/karma.conf.js"
+            "tsConfig": "projects/mat-tristate-checkbox/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-tristate-checkbox/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/bepo65/mat-tristate-checkbox/**/*.ts",
-              "projects/bepo65/mat-tristate-checkbox/**/*.json",
-              "projects/bepo65/mat-tristate-checkbox/**/*.html"
+              "projects/mat-tristate-checkbox/**/*.ts",
+              "projects/mat-tristate-checkbox/**/*.json",
+              "projects/mat-tristate-checkbox/**/*.html"
             ]
           }
         }

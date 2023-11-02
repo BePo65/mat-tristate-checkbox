@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../../coverage/mat-tristate-checkbox'),
+      dir: require('path').join(__dirname, '../../coverage/mat-tristate-checkbox'),
       subdir: '.',
       reporters: [
         { type: 'html' },

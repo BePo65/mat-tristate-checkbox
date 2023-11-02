@@ -46,7 +46,9 @@
       },
       "settings": {
         "import/parsers": {
-          "@typescript-eslint/parser": [".ts"]
+          "@typescript-eslint/parser": [
+            ".ts"
+          ]
         },
         "import/resolver": {
           "node": true,
@@ -70,9 +72,13 @@
         ],
         "comma-dangle": "error",
         "import/order": [
-          "error", {
+          "error",
+          {
             "groups": [
-              ["builtin", "external"],
+              [
+                "builtin",
+                "external"
+              ],
               "parent",
               "sibling",
               "internal"
@@ -137,7 +143,10 @@
             "classPropertiesAllowed": false
           }
         ],
-        "semi": ["error", "always"]
+        "semi": [
+          "error",
+          "always"
+        ]
       }
     },
     {

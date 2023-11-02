@@ -12,6 +12,8 @@ updates:
       versions: ["16.x"]
     - dependency-name: "@angular-eslint/*"
       versions: ["16.x"]
+    - dependency-name: "@types/jasmine"
+      versions: ["5.x"]
     - dependency-name: "ng-packagr"
       versions: ["16.x"]
     - dependency-name: "jasmine-core"
@@ -19,4 +21,4 @@ updates:
     - dependency-name: "typescript"
       versions: ["4.9.x"]
     - dependency-name: "zone"
-      versions: ["0.14.x"]
+      versions: ["0.14.1"]

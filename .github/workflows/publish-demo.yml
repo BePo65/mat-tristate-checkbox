@@ -26,7 +26,6 @@ jobs:
       - name: Build project
         run: |
           npm ci
-          npm run build
           npm run build:ghpages
 
       - name: Publish current workdir (which contains generated content) to GitHub Pages

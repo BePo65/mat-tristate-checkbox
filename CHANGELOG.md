@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [15.1.3](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.2...v15.1.3) (2023-11-02)
+
+
+### Bug Fixes
+
+* beautify header of demo page ([d490a4c](https://github.com/BePo65/mat-tristate-checkbox/commit/d490a4c7811fca87d5319234a72e2d1476d29a1e))
+* remove 'base' from header of index.html to solve github pages issue ([72623d5](https://github.com/BePo65/mat-tristate-checkbox/commit/72623d5f3fb88cbbe2e9e5414c40c0d729fd2df7))
+* update screenshot in README.md ([08de7ca](https://github.com/BePo65/mat-tristate-checkbox/commit/08de7ca0883f8d27036ce0fef395725984ad50c4))
+
 ### [15.1.2](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.1...v15.1.2) (2023-05-24)
 
 ### [15.1.1](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.0...v15.1.1) (2023-05-24)

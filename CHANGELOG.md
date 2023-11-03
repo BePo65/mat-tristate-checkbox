@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.4...v16.0.0) (2023-11-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to Angular v16
+
+### Features
+
+* add header and short description to demo page ([05e58b9](https://github.com/BePo65/mat-tristate-checkbox/commit/05e58b9e2f63d79b90bfe26822f91a3be83038ed))
+* remove scope from mat-tristate-checkbox library ([300a151](https://github.com/BePo65/mat-tristate-checkbox/commit/300a151b7b35265082649e31ebb21d4d50ac463d))
+* update to Angular v16 ([76f50b6](https://github.com/BePo65/mat-tristate-checkbox/commit/76f50b667489feb7f5287ff3fe0f55d3df87c72c))
+
 ### [15.1.4](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.3...v15.1.4) (2023-11-02)
 
 ### [15.1.3](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.2...v15.1.3) (2023-11-02)

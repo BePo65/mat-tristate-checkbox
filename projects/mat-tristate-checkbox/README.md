@@ -5,6 +5,9 @@
 
 > &lt;mat-tristate-checkbox&gt; provides the same functionality as the Angular Material checkbox enhanced with 3 states.
 
+## Release hints
+Starting with version 16 this package is unscoped (i.e. is named 'mat-image-overflow' not '@bepo65/mat-image-overflow').
+
 ## Prerequisites
 
 The package can be used in Angular apps with Angular Material installed. This Version requires Angular 16.

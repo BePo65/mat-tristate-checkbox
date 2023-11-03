@@ -77,7 +77,7 @@ npm run test
 For list of changes and bugfixes, see [CHANGELOG.md](CHANGELOG.md).
 
 ## Release hints
-Starting with version 16 the generated package on npm is unscoped (i.e. does not have / require the bepo65 scope).
+Starting with version 16 the generated package on npm is unscoped (i.e. is named 'mat-image-overflow' not '@bepo65/mat-image-overflow').
 
 ## Contributing
 

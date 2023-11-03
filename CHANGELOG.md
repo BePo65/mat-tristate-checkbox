@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [16.0.1](https://github.com/BePo65/mat-tristate-checkbox/compare/v16.0.0...v16.0.1) (2023-11-03)
+
 ## [16.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.4...v16.0.0) (2023-11-03)
 
 

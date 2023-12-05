@@ -15,6 +15,6 @@ updates:
     - dependency-name: "ng-packagr"
       versions: ["17.x"]
     - dependency-name: "zone"
-      versions: ["0.14.0", "0.14.1"]
+      versions: ["0.14.0", "0.14.1", "0.14.2"]
     - dependency-name: "typescript"
-      versions: ["5.2.x"]
+      versions: ["5.2.x", "5.3.x"]

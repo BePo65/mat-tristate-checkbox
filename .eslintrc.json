@@ -3,10 +3,7 @@
   "ignorePatterns": [
     "**/*"
   ],
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
+  "reportUnusedDisableDirectives": true,
   "overrides": [
     {
       "files": [
@@ -46,7 +43,7 @@
           "node": true,
           "typescript": {
             "project": [
-              "./tsconfig.json"
+              "tsconfig.json"
             ]
           }
         }
@@ -60,6 +57,22 @@
           "error",
           {
             "ignoreStatic": true
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
           }
         ],
         "comma-dangle": "error",
@@ -118,7 +131,6 @@
             ]
           }
         ],
-        "no-trailing-spaces": "warn",
         "no-multiple-empty-lines": [
           "error",
           {
@@ -127,6 +139,7 @@
             "maxEOF": 1
           }
         ],
+        "no-trailing-spaces": "warn",
         "prefer-arrow/prefer-arrow-functions": [
           "warn",
           {
@@ -145,9 +158,6 @@
       "files": [
         "*.spec.ts"
       ],
-      "env": {
-        "jasmine": true
-      },
       "plugins": [
         "jasmine"
       ],
@@ -156,6 +166,91 @@
       ],
       "rules": {
         "jasmine/missing-expect": "warn"
+      }
+    },
+    {
+      "files": [
+        "*.{js,cjs}"
+      ],
+      "env": {
+        "node": true
+      },
+      "plugins": [
+        "jsdoc"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:jsdoc/recommended"
+      ],
+      "parserOptions": {
+        "ecmaVersion": 2021,
+        "ecmaFeatures": {
+          "impliedStrict": true
+        }
+      },
+      "rules": {
+        "comma-dangle": "error",
+        "jsdoc/require-param-type": "off",
+        "jsdoc/require-returns-type": [
+          "off",
+          {"contexts": [
+            "any"
+            ]
+          }
+        ],
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 1,
+            "maxEOF": 1
+          }
+        ],
+        "no-trailing-spaces": "warn",
+        "semi": ["error", "always"]
+      }
+    },
+    {
+      "files": [
+        "*.mjs"
+      ],
+      "env": {
+        "node": true
+      },
+      "plugins": [
+        "jsdoc"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:jsdoc/recommended"
+      ],
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2021,
+        "ecmaFeatures": {
+          "impliedStrict": true
+        }
+      },
+      "rules": {
+        "comma-dangle": "error",
+        "jsdoc/require-param-type": "off",
+        "jsdoc/require-returns-type": [
+          "off",
+          {"contexts": [
+            "any"
+            ]
+          }
+        ],
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 1,
+            "maxEOF": 1
+          }
+        ],
+        "no-trailing-spaces": "warn",
+        "semi": ["error", "always"]
       }
     },
     {

@@ -3,7 +3,9 @@
   "compilerOptions": {
     "inlineSources": false,
     "sourceMap": false,
-    "types": []
+    "types": [
+      "cypress"
+    ]
   },
   "include": [
     "**/*.ts",

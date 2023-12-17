@@ -8,8 +8,8 @@
       "files": [
         "*.ts"
       ],
-      "parser": "@typescript-eslint/parser",
       "parserOptions": {
+        // Path is relative to the workspace as this file extends the root .eslintrc.json!
         "project": "projects/mat-tristate-checkbox-demo/cypress/tsconfig.json",
         "ecmaVersion": 2021,
         "sourceType": "module"
@@ -24,39 +24,12 @@
           "node": true,
           "typescript": {
             "project": [
+              // Path is relative to the workspace as this file extends the root .eslintrc.json!
               "projects/mat-tristate-checkbox-demo/cypress/tsconfig.json"
             ]
           }
         }
-      },
-      "rules": {
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "lib",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "lib",
-            "style": "kebab-case"
-          }
-        ]
       }
-    },
-    {
-      "files": [
-        "*.json"
-      ]
-    },
-    {
-      "files": [
-        "*.html"
-      ]
     }
   ]
 }

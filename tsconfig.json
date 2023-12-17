@@ -9,28 +9,28 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "module": "es2022",
-    "moduleResolution": "node",
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "strict": true,
-    "target": "ES2022",
-    "useDefineForClassFields": false,
     "lib": [
       "ES2022",
       "dom"
     ],
+    "module": "es2022",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "outDir": "./dist/out-tsc",
     "paths": {
       "mat-tristate-checkbox": [
         "dist/mat-tristate-checkbox/mat-tristate-checkbox",
         "dist/mat-tristate-checkbox"
       ]
     },
-    "types": ["jasmine"]
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2022",
+    "types": ["jasmine"],
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

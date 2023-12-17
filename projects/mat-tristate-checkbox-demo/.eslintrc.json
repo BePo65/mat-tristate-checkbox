@@ -9,37 +9,14 @@
       "files": [
         "*.ts"
       ],
-      "excludedFiles": "cypress.config.ts",
-      "rules": {
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "app",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
-          }
-        ]
-      }
-    },
-    {
-      "files": [
-        "*.spec.ts"
-      ]
+      "excludedFiles": "cypress.config.ts"
     },
     {
       "files": [
         "cypress.config.ts"
       ],
-      "parser": "@typescript-eslint/parser",
       "parserOptions": {
+        // Path is relative to the workspace as this file extends the root .eslintrc.json!
         "project": "projects/mat-tristate-checkbox-demo/cypress/tsconfig.json",
         "ecmaVersion": 2021,
         "sourceType": "module"
@@ -54,110 +31,12 @@
           "node": true,
           "typescript": {
             "project": [
+              // Path is relative to the workspace as this file extends the root .eslintrc.json!
               "projects/mat-tristate-checkbox-demo/cypress/tsconfig.json"
             ]
           }
         }
-      },
-      "rules": {
-        "@typescript-eslint/quotes": [
-          "error",
-          "single"
-        ],
-        "@typescript-eslint/unbound-method": [
-          "error",
-          {
-            "ignoreStatic": true
-          }
-        ],
-        "comma-dangle": "error",
-        "import/order": [
-          "error",
-          {
-            "groups": [
-              [
-                "builtin",
-                "external"
-              ],
-              "parent",
-              "sibling",
-              "internal"
-            ],
-            "pathGroups": [
-              {
-                "pattern": "@lib/**",
-                "group": "parent",
-                "position": "before"
-              },
-              {
-                "pattern": "@env/**",
-                "group": "parent",
-                "position": "after"
-              },
-              {
-                "pattern": "@config/**",
-                "group": "sibling",
-                "position": "before"
-              },
-              {
-                "pattern": "@shared/**",
-                "group": "sibling",
-                "position": "after"
-              },
-              {
-                "pattern": "@app/**",
-                "group": "internal",
-                "position": "before"
-              }
-            ],
-            "alphabetize": {
-              "order": "asc",
-              "caseInsensitive": true
-            },
-            "newlines-between": "always"
-          }
-        ],
-        "jsdoc/require-param-type": "off",
-        "jsdoc/require-returns-type": [
-          "off",
-          {
-            "contexts": [
-              "any"
-            ]
-          }
-        ],
-        "no-trailing-spaces": "warn",
-        "no-multiple-empty-lines": [
-          "error",
-          {
-            "max": 1,
-            "maxBOF": 1,
-            "maxEOF": 1
-          }
-        ],
-        "prefer-arrow/prefer-arrow-functions": [
-          "warn",
-          {
-            "disallowPrototype": true,
-            "singleReturnOnly": false,
-            "classPropertiesAllowed": false
-          }
-        ],
-        "semi": [
-          "error",
-          "always"
-        ]
       }
-    },
-    {
-      "files": [
-        "*.json"
-      ]
-    },
-    {
-      "files": [
-        "*.html"
-      ]
     }
   ]
 }

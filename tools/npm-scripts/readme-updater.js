@@ -1,6 +1,4 @@
 // tslint:disable
- 
- 
 
 // readme-updater.js
 // standard-version updater for readme files with iconified semantic version string.

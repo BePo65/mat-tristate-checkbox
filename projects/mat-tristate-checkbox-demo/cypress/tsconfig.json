@@ -9,8 +9,7 @@
   "files": [],
   "include": [
     "**/*.ts",
-    "../cypress.config.ts",
-    "node_modules/cypress"
+    "../cypress.config.ts"
   ],
   "exclude": []
 }

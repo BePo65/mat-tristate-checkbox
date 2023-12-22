@@ -36,10 +36,9 @@
     "release": "standard-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open",
     "e2e": "npm run cypress:demo:run:e2e",
-    "ct": "npm run cypress:demo:run:ct && npm run cypress:lib:run:ct",
+    "ct": "npm run cypress:lib:run:ct",
     "cypress:demo:open": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress open --project=projects/mat-tristate-checkbox-demo\"",
     "cypress:demo:run:e2e": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress run --project=projects/mat-tristate-checkbox-demo\"",
-    "cypress:demo:run:ct": "cypress run --project=projects/mat-tristate-checkbox-demo --component",
     "cypress:lib:open": "cypress open --project=projects/mat-tristate-checkbox",
     "cypress:lib:run:ct": "cypress run --project=projects/mat-tristate-checkbox --component"
   },

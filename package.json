@@ -35,6 +35,7 @@
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
     "release": "standard-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open",
+    "start:debug": "ng serve --host=127.0.0.1",
     "e2e": "npm run cypress:demo:run:e2e",
     "ct": "npm run cypress:lib:run:ct",
     "cypress:demo:open": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress open --project=projects/mat-tristate-checkbox-demo\"",

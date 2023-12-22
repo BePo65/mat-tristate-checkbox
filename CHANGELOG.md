@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v16.0.1...v17.0.0) (2023-12-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to angular v17
+
+### Features
+
+* change mat-tristate-checkbox to standalone components ([badcb5d](https://github.com/BePo65/mat-tristate-checkbox/commit/badcb5db050f6ccdff8bfad9e066fcb91cd6c440))
+* update to angular v17 ([351e6c2](https://github.com/BePo65/mat-tristate-checkbox/commit/351e6c25ea46d96e0b7100c113a5059e5c01b4a5))
+
+
+### Bug Fixes
+
+* **demo:** remove permanent scrollbar in demo window ([81f2448](https://github.com/BePo65/mat-tristate-checkbox/commit/81f24486eaa42b8f82c775181691bded2d0a23cd))
+* remove log to console on startup ([8a996ec](https://github.com/BePo65/mat-tristate-checkbox/commit/8a996ecabb7f6e588d5133d89f0bc64dd6610ca9))
+
 ### [16.0.1](https://github.com/BePo65/mat-tristate-checkbox/compare/v16.0.0...v16.0.1) (2023-11-03)
 
 ## [16.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v15.1.4...v16.0.0) (2023-11-03)

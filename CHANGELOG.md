@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [17.0.1](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.0...v17.0.1) (2023-12-22)
+
+
+### Bug Fixes
+
+* update peer dependencies of library to angular v17 ([07d2541](https://github.com/BePo65/mat-tristate-checkbox/commit/07d2541db1e05494b3ee9a1efb04006424ff2f5b))
+
 ## [17.0.0](https://github.com/BePo65/mat-tristate-checkbox/compare/v16.0.1...v17.0.0) (2023-12-22)
 
 

@@ -22,8 +22,7 @@
     "outDir": "./dist/out-tsc",
     "paths": {
       "mat-tristate-checkbox": [
-        "dist/mat-tristate-checkbox/mat-tristate-checkbox",
-        "dist/mat-tristate-checkbox"
+        "projects/mat-tristate-checkbox/src"
       ]
     },
     "sourceMap": true,

@@ -1,7 +1,3 @@
-/*
- * No 'e2e' config element, as this is a library without web page.
- */
-
 import { defineConfig } from 'cypress';
 
 export default defineConfig({

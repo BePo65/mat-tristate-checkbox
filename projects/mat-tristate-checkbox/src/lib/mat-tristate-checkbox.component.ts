@@ -44,7 +44,6 @@ export class MatTristateCheckboxComponent implements ControlValueAccessor {
   writeValue(value?: boolean): void {
     if (value === null) {
       value = this.chkStates[0];
-      console.log('writeValue mit null');
     } else {
       if (!this.chkStates.includes(value)) {
         throw new Error(`Value '${value?.toString() || 'undefined'}' in  MatTristateCheckboxComponent is invalid (should boolean or undefined).`);

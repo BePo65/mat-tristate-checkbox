@@ -16,10 +16,7 @@ describe('MatTristateCheckboxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        MatTristateCheckboxComponent
-      ],
-      imports: [
+    imports: [
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
@@ -28,9 +25,10 @@ describe('MatTristateCheckboxComponent', () => {
         MatButtonToggleModule,
         MatCheckboxModule,
         MatRippleModule,
-        MatToolbarModule
-      ]
-    })
+        MatToolbarModule,
+        MatTristateCheckboxComponent
+    ]
+})
       .compileComponents();
   });
 

@@ -1,12 +1,16 @@
 
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { MatCheckboxChange } from '@angular/material/checkbox';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxChange, MatCheckboxModule } from '@angular/material/checkbox';
+
+import { MatTristateCheckboxComponent } from '../../../mat-tristate-checkbox/src/lib/mat-tristate-checkbox.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [MatTristateCheckboxComponent, FormsModule, MatCheckboxModule, ReactiveFormsModule]
 })
 export class AppComponent {
   isHoliday = undefined;

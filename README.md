@@ -17,9 +17,9 @@ npm install mat-tristate-checkbox
 
 ## Sample usage of checkbox
 
-Now you can use the mat-tristate-checkbox component in your app components, for example in app.component.ts:
+Now you can use the mat-tristate-checkbox component in your app components, for example in app.module.ts:
 ```javascript
-import { MatTristateCheckboxModule } from 'mat-tristate-checkbox';
+import { MatTristateCheckboxComponent } from 'mat-tristate-checkbox';
 ...
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { MatTristateCheckboxModule } from 'mat-tristate-checkbox';
   ],
   imports: [
     ...
-    MatTristateCheckboxModule
+    MatTristateCheckboxComponent
   ],
   ...
 })

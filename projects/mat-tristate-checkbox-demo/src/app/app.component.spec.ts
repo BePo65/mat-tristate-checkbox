@@ -9,15 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
-import { MatTristateCheckboxModule } from 'mat-tristate-checkbox';
+import { MatTristateCheckboxComponent } from 'mat-tristate-checkbox';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-      imports: [
+    imports: [
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
@@ -26,9 +23,10 @@ describe('AppComponent', () => {
         MatButtonToggleModule,
         MatCheckboxModule,
         MatRippleModule,
-        MatTristateCheckboxModule
-      ]
-    }).compileComponents();
+        MatTristateCheckboxComponent,
+        AppComponent
+    ]
+}).compileComponents();
   });
 
   it('should create the app', () => {

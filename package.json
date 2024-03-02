@@ -33,8 +33,8 @@
     "build:demo": "ng build mat-tristate-checkbox-demo --delete-output-path && cpy CHANGELOG.md dist/mat-tristate-checkbox-demo/",
     "build:demo:prod": "ng build mat-tristate-checkbox-demo --delete-output-path --configuration production && cpy CHANGELOG.md dist/mat-tristate-checkbox-demo/",
     "build:ghpages": "npm run build:lib:prod && npm run build:demo:prod && del-cli ghpages && cpy \"dist/mat-tristate-checkbox-demo/**\" ghpages",
-    "init-changelog": "standard-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
-    "release": "standard-version -i CHANGELOG.md --same-file",
+    "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
+    "release": "commit-and-tag-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open",
     "start:debug": "ng serve --host=127.0.0.1",
     "e2e": "npm run cypress:demo:run:e2e",
@@ -78,6 +78,7 @@
     "@types/node": "^20.11.24",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
+    "commit-and-tag-version": "^12.2.0",
     "cpy-cli": "^5.0.0",
     "cypress": "^13.6.6",
     "del-cli": "^5.1.0",
@@ -99,7 +100,6 @@
     "karma-jasmine-html-reporter": "^2.1.0",
     "material-icons": "^1.13.12",
     "ng-packagr": "^17.2.0",
-    "standard-version": "^9.5.0",
     "start-server-and-test": "^2.0.3",
     "stylelint": "^16.2.1",
     "stylelint-config-recommended-scss": "^14.0.0",
@@ -108,7 +108,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
-  "standard-version": {
+  "commit-and-tag-version": {
     "packageFiles": [
       {
         "filename": "package.json",

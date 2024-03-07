@@ -33,6 +33,8 @@
     "build:demo": "ng build mat-tristate-checkbox-demo --delete-output-path && cpy CHANGELOG.md dist/mat-tristate-checkbox-demo/",
     "build:demo:prod": "ng build mat-tristate-checkbox-demo --delete-output-path --configuration production && cpy CHANGELOG.md dist/mat-tristate-checkbox-demo/",
     "build:ghpages": "npm run build:lib:prod && npm run build:demo:prod && del-cli ghpages && cpy \"dist/mat-tristate-checkbox-demo/**\" ghpages",
+    "unimported": "npx unimported",
+    "deprecated": "npx check-is-deprecated -f ./package.json",
     "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
     "release": "commit-and-tag-version -i CHANGELOG.md --same-file",
     "start": "ng serve --open",

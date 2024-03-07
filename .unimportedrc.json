@@ -1,0 +1,30 @@
+{
+  "entry": [
+    "projects/mat-tristate-checkbox/src/index.ts",
+    "projects/mat-tristate-checkbox-demo/src/main.ts"
+  ],
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/*.tests.{js,jsx,ts,tsx}",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/*.d.ts",
+    "coverage/**",
+    "dist/**",
+    "**/karma.conf.js",
+    "**/cypress.config.ts",
+    "projects/mat-tristate-checkbox-demo/cypress/**",
+    "projects/mat-tristate-checkbox/cypress/**",
+    "tools/npm-scripts/**"
+  ],
+  "ignoreUnimported": [
+    "projects/mat-tristate-checkbox-demo/src/environments/environment.prod.ts"
+  ],
+  "ignoreUnused": [
+    "@angular/platform-browser-dynamic",
+    "@angular/router",
+    "roboto-fontface",
+    "tslib"
+  ],
+  "ignoreUnresolved": []
+}

@@ -13,9 +13,6 @@
   },
   "homepage": "https://github.com/BePo65/mat-tristate-checkbox",
   "private": false,
-  "dependencies": {
-    "tslib": "^2.0.0"
-  },
   "peerDependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/cdk": "^17.0.0",
@@ -25,6 +22,9 @@
     "@angular/material": "^17.0.0",
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
   },
   "sideEffects": false
 }

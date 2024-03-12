@@ -1,13 +1,14 @@
 {
   "extends": "../.eslintrc.json",
-  "ignorePatterns": [
-    "!**/*"
-  ],
+  "ignorePatterns": ["!**/*"],
   "overrides": [
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
+      "plugins": ["cypress"],
+      "env": {
+        "cypress/globals": true
+      },
+      "extends": ["plugin:cypress/recommended"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": "projects/mat-tristate-checkbox/cypress/tsconfig.json",
@@ -16,16 +17,12 @@
       },
       "settings": {
         "import/parsers": {
-          "@typescript-eslint/parser": [
-            ".ts"
-          ]
+          "@typescript-eslint/parser": [".ts"]
         },
         "import/resolver": {
           "node": true,
           "typescript": {
-            "project": [
-              "projects/mat-tristate-checkbox/cypress/tsconfig.json"
-            ]
+            "project": ["projects/mat-tristate-checkbox/cypress/tsconfig.json"]
           }
         }
       },
@@ -47,16 +44,6 @@
           }
         ]
       }
-    },
-    {
-      "files": [
-        "*.json"
-      ]
-    },
-    {
-      "files": [
-        "*.html"
-      ]
     }
   ]
 }

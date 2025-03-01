@@ -124,6 +124,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 This project uses the fonts '[Roboto](https://fonts.google.com/specimen/Roboto/about)' and '[Material Icons](https://github.com/google/material-design-icons)' from the [Google Fonts Library](https://fonts.google.com/) that are licensed under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ## Hints
-As `eslint` V9 requires a fundamental change to the configuration files, the update will be done in a later version.
+As `eslint` V9 is not supported by angular@17 and also requires a fundamental change to the configuration files, the update will be done in a later version.
 
 As a consequence the package `eslint-plugin-cypress` cannot be updated to a version 4.x (as this version has a peerDependency of eslint >= 9).

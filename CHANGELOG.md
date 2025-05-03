@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [17.0.6](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.5...v17.0.6) (2025-05-03)
+
+
+### Bug Fixes
+
+* suppress github dependabots warning to update typescript to v5.8 ([0bbaafb](https://github.com/BePo65/mat-tristate-checkbox/commit/0bbaafbf56cfe6577dea321561c4b170ef98f451))
+* update packages to fix github dependabot security warnings ([3e980b6](https://github.com/BePo65/mat-tristate-checkbox/commit/3e980b6b36cf7422bde5caaee76a6fa3b3c3216d))
+* update packages to fix github dependabot security warnings ([6e12127](https://github.com/BePo65/mat-tristate-checkbox/commit/6e12127f18f5fb38be5c3c88f396e1015cf18c88))
+* update packages to fix github dependabot security warnings ([de3ff02](https://github.com/BePo65/mat-tristate-checkbox/commit/de3ff02b1a4835bfa2835db6cd5cbb5346c9206f))
+* update packages to fix github dependabot security warnings ([1abb651](https://github.com/BePo65/mat-tristate-checkbox/commit/1abb6518828b265b3c08e40827eab3dc2bea403c))
+
 ## [17.0.5](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.4...v17.0.5) (2024-12-10)
 
 

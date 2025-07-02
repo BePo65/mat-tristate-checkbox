@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [17.0.7](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.6...v17.0.7) (2025-07-02)
+
+
+### Bug Fixes
+
+* update packages to fix security warnings ([4a09403](https://github.com/BePo65/mat-tristate-checkbox/commit/4a09403319ca72b1446f810f9f58e2e75e153a5a))
+
 ## [17.0.6](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.5...v17.0.6) (2025-05-03)
 
 

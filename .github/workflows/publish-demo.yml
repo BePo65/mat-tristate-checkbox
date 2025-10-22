@@ -9,18 +9,14 @@ jobs:
   publish:
     runs-on: ubuntu-22.04
 
-    strategy:
-      matrix:
-        node-version: [22.x]
-
     steps:
       - name: Check out
         uses: actions/checkout@v4
 
-      - name: Use Node ${{ matrix.node-version }}
+      - name: Use Node v22
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '22.x'
           cache: 'npm'
 
       - name: Build project

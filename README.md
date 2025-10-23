@@ -1,5 +1,5 @@
 # mat-tristate-checkbox
-[![Version](https://img.shields.io/badge/version-17.0.7-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/mat-tristate-checkbox/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-17.0.8-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/mat-tristate-checkbox/blob/main/CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?cacheSeconds=86400)](https://github.com/BePo65/mat-tristate-checkbox/blob/main/LICENSE)
 [![Angular version](https://img.shields.io/github/package-json/dependency-version/bepo65/mat-tristate-checkbox/@angular/core?color=red&label=Angular&logo=angular&logoColor=red)](https://v17.angular.io/docs)
 [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/bepo65/mat-tristate-checkbox/@angular/material?color=red&label=Angular-Material&logo=angular&logoColor=red)](https://v17.material.angular.dev/components/categories)

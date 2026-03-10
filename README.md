@@ -49,11 +49,11 @@ Try out the [demo page](https://bepo65.github.io/mat-tristate-checkbox/).
 
 ## Properties of checkbox
 
-| Name | Description |
-|------|-------------|
-|  @Input()<br />color: ThemePalette  | Theme color palette for the component. Defaults to 'accent' |
-|  @Input()<br />disabled: any  | Whether the checkbox is disabled. |
-|  @Input()<br />labelPosition: 'before' &#124; 'after'  | Whether the label should appear after or before the checkbox. Defaults to 'after' |
+| Name                                                 | Description                                                                       |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------- |
+| @Input()<br />color: ThemePalette                    | Theme color palette for the component. Defaults to 'accent'                       |
+| @Input()<br />disabled: any                          | Whether the checkbox is disabled.                                                 |
+| @Input()<br />labelPosition: 'before' &#124; 'after' | Whether the label should appear after or before the checkbox. Defaults to 'after' |
 
 ## Values of checkbox
 The value aof the checkbox cycle through these values:
@@ -82,7 +82,7 @@ Starting with version 16 the generated package on npm is unscoped (i.e. is named
 
 ## Contributing
 
-## Changelog
+### Changelog
 The project uses 'standard-version' to create the changelog. To enable this system, commit messages are linted before commits are executed by git.
 
 **The structure of commit messages is**:

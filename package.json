@@ -102,7 +102,7 @@
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.2.0",
     "material-icons": "^1.13.14",
-    "ng-packagr": "^17.3.0",
+    "ng-packagr": "^22.0.0",
     "start-server-and-test": "^3.0.2",
     "stylelint": "^17.9.0",
     "stylelint-config-recommended-scss": "^17.0.1",

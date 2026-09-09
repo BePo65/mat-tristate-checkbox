@@ -130,6 +130,10 @@ As a consequence the package `eslint-plugin-cypress` cannot be updated to a vers
 
 `@cypress/webpack-preprocessor` cannot be updated to v7.x as it does not support webpack v4.x (used by angular v17.x).
 
-`cypress` cannot be updated to v15.x as it no longer supports webpack v4.x (angular v18 will switch away from webpack).
+`cypress` cannot be updated to v15.x or greater, as it no longer supports webpack v4.x (angular v18 will switch away from webpack).
 
-`@cypress/schematic` cannot be updated to v4.x, as this requires angular v18.x.
+`@cypress/schematic` cannot be updated to v4.x or greater, as this requires angular v18.x.
+
+`@types/node` cannot be updated to version >= 25, as this will break the tests.
+
+`jasmine-core` cannot be updated to v7.x or greater, as this version does not run with karma and zone.js.

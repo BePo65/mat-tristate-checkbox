@@ -36,7 +36,7 @@
     "unimported": "npx unimported",
     "deprecated": "npx check-is-deprecated -f ./package.json",
     "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --prerelease pre --first-release",
-    "release": "commit-and-tag-version -i CHANGELOG.md --same-file",
+    "release": "commit-and-tag-version -i CHANGELOG.md --same-file && npm run build:prod",
     "start": "ng serve --open",
     "start:debug": "ng serve --host=127.0.0.1",
     "e2e": "npm run cypress:demo:run:e2e",

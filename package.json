@@ -44,7 +44,8 @@
     "cypress:demo:open": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress open --project=projects/mat-tristate-checkbox-demo\"",
     "cypress:demo:run:e2e": "start-server-and-test \"ng serve\" http://localhost:4200 \"cypress run --project=projects/mat-tristate-checkbox-demo\"",
     "cypress:lib:open": "cypress open --project=projects/mat-tristate-checkbox",
-    "cypress:lib:run:ct": "cypress run --project=projects/mat-tristate-checkbox --component"
+    "cypress:lib:run:ct": "cypress run --project=projects/mat-tristate-checkbox --component",
+    "ncu:test": "npm run test && npm run build && npm run e2e"
   },
   "private": false,
   "dependencies": {

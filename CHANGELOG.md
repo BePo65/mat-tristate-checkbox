@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [17.0.10](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.9...v17.0.10) (2026-10-05)
+
 ## [17.0.9](https://github.com/BePo65/mat-tristate-checkbox/compare/v17.0.8...v17.0.9) (2026-04-04)
 
 

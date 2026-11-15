@@ -13,6 +13,8 @@ reject:
   - "eslint"
   # jasmine-core@7 ff. is not compatible with zone and karma
   - "jasmine-core"
+  # jasmine-core@7 ff. is not compatible with zone and karma
+  - "@types/jasmine"
   # Cypress@15 ff. requires webpack@4 that is not compatible with angular@17
   - "cypress"
   - "@cypress/schematic"
